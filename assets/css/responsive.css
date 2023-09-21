@@ -1,0 +1,1877 @@
+/*-------------------------------------------
+    40. Responsive Design CSS
+-------------------------------------------*/
+
+/*=====================================
+    Extra Large Screen
+========================================*/
+
+@media only screen and (min-width: 1920px) {
+}
+
+/*=====================================
+  For Large Screen
+========================================*/
+
+/*--------Max 1680px Width Screen---------*/
+@media only screen and (max-width: 1680px) {
+    /*Menu CSS*/
+    .top-menu-area {
+        padding: 0 30px;
+    }
+    /*Menu CSS*/
+
+}
+
+/*--------Max 1366px Width Screen---------*/
+
+@media only screen and (max-width: 1399px) {
+
+    /* Menu area */
+    .top-menu-area {
+        padding: 0 30px;
+    }
+    /* Menu area */
+
+   /* Hero area */
+   .hero-main-title {
+        width: 78%;
+        font-size: 56px;
+    }
+   .search-domain-area form {
+        width: 615px;
+    }
+    .search-domain-area form input {
+        width: 78%;
+    }
+    .search-domain-area form button span {
+        padding: 8px 13px;
+        height: auto;
+    }
+   /* Hero area */
+
+   /* One click install */
+   .one-click-install-item-wrap .col-md-2:nth-child(even) .one-click-install-item {
+        margin-top: 60px;
+    }
+   .one-click-install-item {
+        padding: 30px 15px;
+    }
+   /* One click install */
+
+   /* Let Your site Run */
+   .let-your-site-run-item img {
+        height: 60px;
+    }
+    .let-your-site-run-item {
+        padding: 40px 25px;
+        min-height: 290px;
+    }
+    .let-your-site-left-part {
+        padding: 60px 30px;
+    }
+   /* Let Your site Run */
+
+   /* Customer Testimonial */
+   .mobile-section-title {
+        display: block;
+   }
+   .desktop-section-title {
+    display: none;
+   }
+   .customer-testimonial-item {
+        width: 93%;
+    }
+    .owl-small .owl-nav {
+        margin-bottom: 30px;
+    }
+   /* Customer Testimonial */
+
+   /* Blog Section */
+   .featured-blog-item .blog-item-title {
+        font-size: 24px;
+    }
+   .blog-item-title {
+        font-size: 19px;
+    }
+   /* Blog Section */
+
+   /* Error Page */
+   .error-content h3 {
+        font-size: 36px;
+    }
+   /* Error Page */
+
+   /* About page */
+   .about-feature-item {
+        padding: 60px 30px;
+    }
+   /* About page */
+
+   /* Career Page */
+   .powerful-affiliate-item h4, .where-work-content h4 {
+        font-size: 22px;
+    }
+   /* Career Page */
+
+   /* VPS Hosting Plan */
+   .vps-hosting-pricing-wrap table th {
+        min-width: 213px;
+        padding: 20px 20px;
+    }
+   /* VPS Hosting Plan */
+
+   /* Hosting all pages */
+   .keep-you-focused-content {
+        padding-right: 20px;
+    }
+    .manage-multiple-sites-area .keep-you-focused-content {
+        padding-right: 0;
+        padding-left: 20px;
+    }
+   /* Hosting all pages */
+
+   /* Login/Register Page */
+    .login-social-btn {
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+    .login-social-btn .iconify {
+        font-size: 17px;
+    }
+   /* Login/Register Page */
+
+   /* Thank you page */
+   .thankyou-box {
+        width: 87%;
+    }
+    .thankyou-box-inner h1 {
+        font-size: 48px;
+    }
+   /* Thank you page */
+
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1366px) {
+    #mainNav {
+        padding: 0 40px;
+    }
+
+}
+
+/*Default for Max 1366px Width Devices*/
+@media only screen and (max-width: 1366px) {
+    /* Menu CSS */
+    #mainNav .navbar-nav .dropdown-menu a {
+        font-size: 14px;
+    }
+    .theme-button {
+        font-size: 16px;
+    }
+
+}
+
+/*--------Max 1200px Width Screen---------*/
+
+@media only screen and (max-width: 1200px) {
+    
+}
+
+/*=====================================
+  For Medium Screen
+========================================*/
+
+@media only screen and (max-width: 1199.98px){
+
+    .coming-soon-title {
+        font-size: 51px;
+    }
+
+    /* Menu Area */
+    .top-menu-item.top-menu-left ul li {
+        margin-right: 14px;
+    }
+    .top-menu-item.top-menu-right ul li {
+        margin-left: 14px;
+    }
+    .top-menu-item.top-menu-middle {
+        display: none;
+    }
+    .hostingMenu .dropdown-menu {
+        width: 38rem;
+    }
+    .navbar-nav-middle {
+        padding-left: 70px;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link {
+        font-size: 15px;
+        padding: 20px 30px 20px 0;
+    }
+    #mainNav.sticky .navbar-nav .nav-item .nav-link {
+        padding: 27px 30px 27px 0;
+    }
+    #mainNav .navbar-brand img, .footer-about img {
+        height: 27px;
+    }
+    .pageMenu .dropdown-item {
+        font-size: 15px!important;
+    }
+    .hosting-menu-item h6 {
+        font-size: 16px;
+    }
+    .hostingMenu .hosting-menu-icon {
+        width: 48px;
+        height: 48px;
+    }
+    .hostingMenu .hosting-menu-icon img {
+        height: 20px;
+    }
+    .navbar-nav-right li a span {
+        padding: 8px 23px!important;
+    }
+    /* Menu Area */
+
+    /* Hero Area */
+    .hero-sub-title {
+        width: 70%;
+    }
+    .hero-floating-img-1 {
+        left: 0;
+    }
+    .hero-floating-img-2 {
+        right: 0;
+    }
+    .hero-floating-img {
+        height: 217px;
+    }
+    .domain-name-item {
+        padding: 26px 14px;
+        min-width: 112px;
+        height: 94px;
+        margin: 5px 5px;
+    }
+    /* Hero Area */
+
+    /* Enjoy Top Rated hosting */
+    .enjoy-top-rated-hosting-support-area .section-title {
+        width: 100%;
+    }
+    .top-rated-icon {
+        width: 60px;
+        height: 60px;
+    }
+    /* Enjoy Top Rated hosting */
+
+    /* Let your site run */
+    .let-your-site-left-part .section-heading {
+        font-size: 42px;
+    }
+    .let-your-site-run-item h6 {
+        line-height: 134%;
+    }
+    /* Let your site run */
+
+    /* Pricing Plan */
+    .pricing-plan-area {
+        background-size: cover;
+        padding-bottom: 140px;
+    }
+    .price-money-back-text {
+        width: 70%;
+    }
+    /* Pricing Plan */
+
+    /* Blog Section */
+    .blog-item.featured-blog-item {
+        border: 1px solid var(--black);
+        flex-direction: row;
+        padding: 30px;
+    }
+    .featured-blog-item .blog-item-content {
+        margin: 0 0 0 30px;
+        border: transparent;
+        padding: 0;
+    }
+    .featured-blog-item .blog-item-title {
+        font-size: 19px;
+    }
+    .featured-blog-item .blog-img img {
+        height: 224px;
+    }
+    .featured-blog-item .blog-img {
+        min-height: auto;
+        height: 224px;
+        width: 224px;
+    }
+    /* Blog Section */
+
+    /* Footer */
+    .footer-widget.footer-about p {
+        padding-right: 40px;
+    }
+    /* Footer */
+
+    /* Blog Page Area */
+    .featured-blog-post-area .blog-item.featured-blog-item {
+        background-color: #fff;
+    }
+    .featured-blog-post-area .blog-item.featured-blog-item .col-md-4 {
+        padding: 0;
+    }
+    .featured-blog-post-area .blog-item.featured-blog-item .col-md-8 {
+        padding: 0;
+    }
+    .featured-blog-post-area .featured-blog-item .blog-item-content {
+        margin: 0 0 0 30px;
+    }
+    .featured-blog-post-area .featured-blog-item .blog-img {
+        margin-left: 0;
+        width: 100%;
+    }
+    .featured-blog-post-area .featured-blog-item .blog-img img {
+        min-height: 224px;
+        width: 100%;
+    }
+    .featured-blog-element {
+        height: 60px;
+        right: -3%;
+        bottom: -23%;
+    }
+    /* Blog Page Area */
+
+    /* Blog Details Page */
+    .blog-details-page:before {
+        height: 0;
+    }
+    /* Blog Details Page */
+
+    /* Breadcrumb Area */
+    .breadcrumb-area {
+        padding: 166px 0 0px;
+    }
+    /* Breadcrumb Area */
+
+    /* Error Page */
+    .error-content h3 {
+        font-size: 32px;
+    }
+    /* Error Page */
+
+    /* faq Page */
+    .faq-left-part .nav-pills .nav-link {
+        padding: 26px;
+    }
+    .faq-left-part .nav-pills .nav-link h5 {
+        font-size: 22px;
+        margin-bottom: 6px;
+    }
+    .tab-content-title-part h3 {
+        font-size: 32px;
+    }
+    .accordion-button {
+        font-size: 18px;
+    }
+    /* faq Page */
+
+    /* Contact page */
+    .contact-info-box {
+        width: 135px;
+        padding: 26px 20px;
+        margin-right: 13px;
+    }
+    .contact-info-box h6 {
+        font-size: 18px;
+    }
+    .page-banner-float-bg {
+        left: -21px;
+    }
+    .page-banner-float-right {
+        right: 0px;
+    }
+    .page-banner-float-left {
+        left: 0;
+    }
+    .page-banner-float-top {
+        left: 164px;
+    }
+    .hosting-type-page-banner-content {
+        width: 100%!important;
+    }
+    .contact-us-page-banner .section-sub-heading {
+        margin-bottom: 30px;
+    }
+    .contact-page-right, .contact-page-left {
+        padding: 23px 30px 30px;
+    }
+    .contact-page-left h3, .contact-page-right form h3, .sign-up-for-call-to-action h3 {
+        font-size: 37px;
+    }
+    /* Contact page */
+
+    /* About Page */
+    .we-hire-the-best-right {
+        padding-left: 0;
+    }
+    .we-hire-the-best-left h2 {
+        font-size: 38px;
+    }
+    .we-hire-the-best-area .we-hire-wrap:nth-child(2n) .we-hire-the-best-right {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .we-hire-the-best-right .we-hire-bg-float {
+        left: 70px;
+        top: 100%;
+    }
+    .we-hire-the-best-area .we-hire-wrap:nth-child(2n) .we-hire-the-best-right .we-hire-bg-float {
+        left: 4px;
+        top: 82%;
+    }
+    .about-feature-area .section-title {
+        width: 100%;
+    }
+    /* About Page */
+
+    /* Affiliate page */
+    .joining-program-item {
+        margin-bottom: 60px;
+    }
+    .easy-to-sell-hosting-area .section-title {
+        width: 100%;
+    }
+    .easy-to-sell-left {
+        padding-right: 30px;
+    }
+    .powerful-affiliate-tools-area .section-title {
+        width: 80%;
+    }
+    /* Affiliate page */
+
+    /* Career page */
+    .play-btn {
+        height: 55px;
+        width: 55px;
+        font-size: 25px;
+    }
+    /* Career page */
+
+    /* Flexible Pricing Page */
+    .pricing-plan-area .hero-floating-img {
+        height: auto;
+    }
+    .pricing-plan-area .hero-floating-img-1 {
+        left: 20px;
+    }
+    .pricing-plan-area .hero-floating-img-2 {
+        right: 20px;
+    }
+    .flexible-pricing-item {
+        padding: 40px 30px;
+    }
+    /* Flexible Pricing Page */
+
+    /* Hosting Related pages */
+    .customize-vps-plan-area .section-title {
+        width: 100%;
+    }
+    .web-hosting-spec-item h4 {
+        font-size: 26px;
+    }
+    .dedicated-server-plan-item-inner {
+        padding: 15px 0;
+    }
+    .dedicated-server-plan-item-inner-title {
+        text-align: center;
+        padding-top: 25px;
+    }
+    .dedicated-server-plan-item-right {
+        border-left: 0;
+        border-top: 1px solid var(--black);
+    }
+    .dedicated-server-plan-item-inner p {
+        margin: 5px 0 0px;
+    }
+    .dedicated-server-plan-item-right .dedicated-server-plan-item-inner {
+        padding: 25px 0 30px;
+    }
+    .dedicated-server-plan-item-right .dedicated-server-plan-item-inner p {
+        margin: 5px 0 15px;
+    }
+    .high-performance-wordpress-hosting-area .section-title {
+        width: 80%;
+    }
+    .wordpress-plan-top {
+        padding: 90px 55px 55px;
+    }
+    .wordpress-plan-price-inner:before {
+        display: none;
+    }
+    /* Hosting Related pages */
+
+    /* Domain All Pages */
+    .domain-name-check-banner-area .page-banner-content.section-title {
+        width: 100%;
+    }
+    .domain-name-checker-form {
+        width: 60%;
+    }
+    .transfer-domain-form .faq-search-group .input-group-text {
+        min-width: 125px;
+    }
+    .control-on-your-web-projects-area .keep-you-focused-content {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+    .before-transferring-your-domain-area .keep-you-focused-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    /* Domain All Pages */
+
+    /* Thankyou page */
+    .thankyou-box-inner {
+        height: 214px;
+    }
+    .headless-subscribe-form.domain-name-checker-form {
+        width: 90%;
+    }
+    /* Thankyou page */
+
+}
+
+/* @media only screen and (max-width: 1199px){
+} */
+
+@media only screen and (min-width: 992px) {
+    /* Hero area */
+    .search-domain-area {
+        padding: 50px 30px;
+    }
+    /* Hero area */
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .section-title, .inside-hosting-pricing-plan-area .section-title, .joomla-hosting-plan-area .section-title,
+    .application-hosting-optimised-area .section-title, .top-level-domains-price-list-area .section-title, .choose-from-the-most-popular-domain-ext-area .section-title {
+        width: 80%;
+    }
+    #mainNav {
+        padding: 21px 16px;
+    }
+}
+
+/*======================================
+      Tablet layout
+=========================================*/
+
+@media only screen and (max-width: 992.98px) {
+
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        padding-right: var(--bs-gutter-x,.75rem)!important;
+        padding-left: var(--bs-gutter-x,.75rem)!important;
+    }
+
+    /* menu css */
+    #mainNav .navbar-nav .nav-item .nav-link {
+        padding: 0.75em 11px;
+    }
+
+    /* Footer */
+    .footer-widget.footer-about p {
+        padding-right: 10px;
+    }
+    /* Footer */
+
+    /* Error Page */
+    .error-content {
+        padding-top: 48px;
+    }
+    /* Error Page */
+    
+    /* contact page */
+    .contact-page-left {
+        padding: 23px 20px 30px 30px;
+    }
+    /* contact page */
+
+    /* Thankyou page */
+    .thankyou-box-inner {
+        height: 205px;
+    }
+    /* Thankyou page */
+
+}
+
+@media only screen and (min-width: 768.98px) and (max-width: 991.98px){
+
+    /*Main Menu Bar*/
+    p {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 991.98px) {
+    .theme-btn span, .theme-btn-transparent span {
+        font-size: 14px;
+        padding: 8px 23px;
+    }
+    .section-heading {
+        margin-top: -5px;
+    }
+    .section-t-space {
+        padding-top: 50px;
+    }
+    .section-b-space{
+        padding-bottom: 50px;
+    }
+    .section-b-115-space {
+        padding-bottom: 25px;
+    }
+    .section-t-115-space {
+        padding-top: 25px;
+    }
+    .coming-soon-title {
+        font-size: 43px;
+    }
+    h5, .h5 {
+        font-size: 21px;
+    }
+    h2, h2.section-heading, .let-your-site-left-part .section-heading {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 28px;
+        line-height: 112%;
+    }
+    .font-18 {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .section-title, .cloud-hosting-service-area .section-title {
+        width: 80%;
+    }
+
+    .section-sub-heading, .section-heading, .vps-hosting-platform-features-area .section-title,
+     .operating-system-logo-slider-area .section-title, .inside-hosting-pricing-plan-area .section-title, .joomla-hosting-plan-area .section-title,
+     .application-hosting-optimised-area .section-title, .top-level-domains-price-list-area .section-title,
+      .choose-from-the-most-popular-domain-ext-area .section-title, .pricing-plan-area  .section-title {
+        width: 100%;
+    }
+
+    /*Menu CSS Start*/
+    .navbar-nav-middle {
+        padding-left: 0;
+    }
+    #mainNav, #mainNav.sticky {
+        padding: 15px 30px!important;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link, #mainNav.sticky .navbar-nav .nav-item .nav-link {
+        padding: 0.75em 11px;
+    }
+    /* Offcanvas menu */
+    .offcanvas-body {
+        padding: 0 1rem 1rem;
+    }
+    .offcanvas-title img {
+        height: 20px;
+    }
+    #mainNav .navbar-toggler {
+        padding: .25rem 0;
+        border: none;
+        color: var(--black);
+        font-size: 1.5rem;
+    }
+    .navbar-nav-right li a {
+        flex-direction: column;
+    }
+    #mainNav .btn {
+        display: flex;
+    }
+    .navbar-nav-middle .dropdown-menu {
+        width: auto;
+    }
+    .navbar-nav-middle .dropdown-menu .row {
+        flex-direction: column;
+        padding: 18px 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .navbar-nav-middle .dropdown-menu li {
+        width: 100%;
+        padding: 0;
+    }
+    .navbar-nav-middle .hosting-menu-item, .application-for-hosting .hosting-menu-item, .application-for-hosting .application-for-hosting-title {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        padding: 0 15px;
+        width: 100%;
+    }
+    .pageMenu .dropdown-item {
+        padding: 10px 15px!important;
+    }
+    /*Menu CSS Start*/
+
+    /* Hero Area */
+    .hero-area-btns .theme-btn-transparent span {
+        padding: 13px 30px;
+    }
+    .hero-content {
+        padding: 174px 0 50px;
+    }
+    .hero-main-title {
+        width: 100%;
+        font-size: 48px;
+    }
+    .search-domain-area {
+        padding: 40px 40px;
+    }
+    .hero-content .theme-button {
+        font-size: 14px;
+    }
+    .hero-content .theme-button-transparent {
+        padding: 8px 23px;
+    }
+    .hero-content .theme-button img {
+        height: 38px;
+    }
+    .search-domain-area form button {
+        top: 9px;
+    }
+    
+    /* Hero Area */
+
+    /* One click install */
+    .one-click-install-item-wrap .col-md-2:nth-child(even) .one-click-install-item {
+        margin-top: 30px;
+    }
+    .one-click-install-item {
+        padding: 22px 15px;
+    }
+    /* One click install */
+
+    /* Let Your Site Run */
+    .let-your-site-left-part-wrap {
+        margin: 12px 0;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+    }
+    .let-your-site-right-col.ps-0 {
+        padding-left: calc(var(--bs-gutter-x) * .5)!important;
+    }
+    /* Let Your Site Run */
+
+    /* Pricing Plan */
+    .pricing-plan-area {
+        padding-bottom: 50px;
+    }
+    .pricing-plan-area colgroup:nth-child(1) {
+        width: 18%;
+    }
+    .pricing-plan-area thead tr th h3 {
+        font-size: 30px;
+    }
+    .pricing-plan-area .table>:not(caption)>*>* {
+        padding: 1rem 1rem;
+        font-size: 16px;
+    }
+    thead tr th h6 {
+        font-size: 17px;
+        line-height: 150%;
+    }
+    .price-money-back-text {
+        width: 100%;
+        padding-left: 0;
+    }
+    /* Pricing Plan */
+
+    /* Enjoy top rated hosting */
+    .top-rated-hosting-right {
+        margin-top: 30px;
+    }
+    .hosting-support-wrap .hosting-support-item:nth-child(n+3), .hosting-support-wrap .hosting-support-item:nth-child(n+4) {
+        margin-bottom: 42px;
+    }
+
+    /* Enjoy top rated hosting */
+
+    /* Customer Testimonial */
+    .customer-testimonial-area .floating-img-1 {
+        display: none;
+    }
+    .owl-big .item img {
+        max-height: 400px;
+        width: auto;
+        margin: 0 auto;
+    }
+    .customer-testimonial-item {
+        margin-top: 30px;
+    }
+    /* Customer Testimonial */
+
+    /*Footer*/
+    .footer-area {
+        padding-top: 50px;
+    }
+    .footer-top-part {
+        padding-bottom: 18px;
+    }
+    .footer-widget {
+        margin-bottom: 30px;
+    }
+    .copyright-text {
+        text-align: center;
+    }
+    .footer-bottom-nav ul {
+        justify-content: center!important;
+    }
+    /* Blog Section */
+    .read-more-btn {
+        margin-top: 18px;
+    }
+    /* Blog Section */
+
+    /* Blog Page */
+    .featured-blog-post-area .blog-item.featured-blog-item {
+        margin: 30px 0;
+    }
+    .blog-list-section-title {
+        margin-bottom: 15px;
+    }
+    .blog-list-top-part {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    /* Blog Page */
+
+    /* Blog Details Page */
+    .post-related-info-item {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .blog-details-post-related-info {
+        padding-bottom: 20px;
+        margin: 30px 0;
+    }
+    .blog-details-post-related-info .post-related-info-item-wrap:nth-child(2n):after {
+        display: none;
+    }
+    .blog-details-inner-media {
+        margin: 30px 0;
+    }
+    
+    .blog-details-quote {
+        padding: 15px 0 15px 15px;
+        margin: 30px 0;
+    }
+    .blog-details-special-media {
+        padding: 30px 30px;
+        margin: 30px 0;
+    }
+    .blog-details-special-media p {
+        font-size: 18px;
+    }
+    .blog-comment-item .comment-author-img, .author-img {
+        width: 60px;
+        height: 60px;
+    }
+    .blog-comment-item .comment-author-img img, .author-img img {
+        min-height: 60px;
+        height: 60px;
+    }
+    .author-details {
+        width: calc( 100% - 90px);
+    }
+    /* Blog Details Page */
+
+    /* Breadcrumb Area */
+    .breadcrumb-area {
+        padding: 123px 0 0px!important;
+    }
+    /* Breadcrumb Area */
+
+    /* Inner Page Banner Area */
+    .page-banner-content.section-title {
+        width: 90%;
+    }
+    /* Inner Page Banner Area */
+
+    /* Terms and Service Page */
+    .terms-of-service-page {
+        padding-bottom: calc(50px - 50px);
+    }
+    .terms-service-box h4 {
+        font-size: 26px;
+    }
+    .terms-service-box p {
+        margin-bottom: 33px;
+    }
+    /* Terms and Service Page */
+
+    /* Error Page */
+    .error-page-area {
+        padding-top: 126px;
+    }
+    /* Error Page */
+
+    /* Login Page */
+    form .theme-btn span, form .theme-btn-transparent span {
+        padding: 14px 23px;
+        height: 53px;
+    }
+    /* Login Page */
+
+    .faq-left-part .nav {
+        flex-direction: row!important;
+        margin-right: 0!important;
+        margin-bottom: 20px;
+    }
+    .faq-left-part .nav-pills .nav-link {
+        padding: 10px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .faq-left-part .nav-pills .nav-link h5 {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    .faq-left-part .nav-pills .nav-link p {
+        display: none;
+    }
+    .faq-right-part .tab-content-title-part {
+        margin-bottom: 8px;
+        padding-bottom: 20px;
+    }
+    
+    .faq-right-part .tab-content .accordion:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    .faq-right-part {
+        border-left: 0;
+        padding-left: 0;
+        border-top: 1px solid var(--black);
+    }
+    .accordion-button::after {
+        background-size: 1.25rem;
+    }
+    .faq-right-part .tab-content {
+        padding-top: 30px;
+    }
+    .tab-content-title-part h3 {
+        font-size: 23px;
+        margin-bottom: 5px;
+    }
+    .faq-search-group {
+        height: 53px;
+    }
+    .faq-search-group .form-control {
+        height: 51px;
+        padding-left: 15px;
+    }
+    .faq-search-group {
+        width: 73%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .faq-search-group .input-group-text {
+        width: 60px;
+        height: 53px;
+    }
+    /* faq Page */
+
+    /* Contact page */
+    .hosting-type-page-banner-img {
+        display: none;
+    }
+    .contact-page-right {
+        border-left: none;
+    }
+    .contact-page-left {
+        border-bottom: 1px solid var(--black);
+    }
+    .contact-page-left .section-sub-heading {
+        margin-bottom: 0;
+    }
+    .contact-page-left h3, .contact-page-right form h3, .sign-up-for-call-to-action h3 {
+        font-size: 26px;
+    }
+    .introductory-offer-box h4 {
+        font-size: 22px;
+    }
+    .sign-up-for-call-to-action {
+        flex-direction: column;
+        text-align: center;
+    }
+    .introductory-offer-box {
+        margin: 10px 0 18px;
+    }
+    .sign-up-for-call-to-action h3 {
+        width: 100%;
+    }
+    /* Contact page */
+
+    /* About Page */
+    .we-hire-the-best-right .we-hire-bg-float {
+        left: 133px;
+        top: 28%;
+    }
+    .we-hire-the-best-area .we-hire-wrap:nth-child(2n) .we-hire-the-best-right .we-hire-bg-float {
+        left: 69px;
+        top: 7%;
+    }
+    .about-feature-item {
+        padding: 34px 30px 12px;
+    }
+    .about-feature-area {
+        padding-bottom: 40px;
+    }
+    /* About Page */
+
+    /* Affiliate page */
+    .affiliate-banner-right {
+        display: block;
+        margin-top: 30px;
+    }
+    .easy-to-sell-item h4 {
+        font-size: 24px;
+        margin-top: -10px;
+    }
+    .easy-to-sell-right {
+        text-align: center;
+    }
+    .affiliate-program-faq-right {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    /* Affiliate page */
+
+    /* Career Page */
+    .modal-job-item-info .job-info-box {
+        padding: 15px 0;
+    }
+    .modal-job-item-info {
+        padding: 10px 15px;
+        flex-direction: column;
+        align-items: flex-start!important;
+    }
+    #jobDetailsModal h4 {
+        font-size: 23px;
+    }
+    .job-details-block h5 {
+        margin-bottom: 20px;
+        font-size: 19px;
+    }
+    /* Career Page */
+
+    /* Flexible Pricing Page */
+    .flexible-price-bottom .theme-btn {
+        margin-top: 23px;
+    }
+    .flexible-price-top h4 {
+        font-size: 27px;
+    }
+    .flexible-price-bottom h3 {
+        font-size: 28px;
+    }
+    /* Flexible Pricing Page */
+
+    /* Pricing Comparison */
+    .pricing-table-wrap .table>:not(caption)>*>* {
+        padding: 1.2rem 1.2rem;
+    }
+    /* Pricing Comparison */
+
+    /* Hosting all pages */
+    .vps-customize-box-item {
+        min-height: 130px;
+    }
+    .vps-customize-box-item h3 {
+        font-size: 28px;
+    }
+    .manage-multiple-sites-area .keep-you-focused-content {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .keep-you-focused-area.manage-multiple-sites-area .row {
+        flex-direction: column-reverse;
+    }
+
+    .keep-you-focused-area-1 .floating-dot, .keep-you-focused-area-1 .floating-star-1, .keep-you-focused-area-1 .floating-star-2,
+    .operating-system-logo-slider-area .floating-dot, .operating-system-logo-slider-area .dots-floating, .operating-system-logo-slider-area .floating-star-2,
+    .operating-system-logo-slider-area .floating-triangle-gradient {
+        display: none;
+    }
+    .email-hosting-expert-support .keep-you-focused-content {
+        margin-bottom: 43px;
+    }
+    .high-performance-wordpress-hosting-area .section-title {
+        width: 100%;
+    }
+    /* Hosting all pages */
+
+    /* Domain All Pages */
+    .domain-name-checker-form {
+        width: 100%;
+    }
+    .transfer-domain-form .faq-search-group {
+        margin-left: 0;
+    }
+    .domain-s-n-item-left, .domain-s-n-item-right, .domain-search-block-title {
+        padding: 20px 20px;
+    }
+    .popular-domain-tag {
+        padding: 8px 8px;
+        font-size: 13px;
+    }
+    /* Domain All Pages */
+
+    /* Thank you page */
+    .thankyou-inner img {
+        top: -35px;
+        /* left: 50%; */
+    }
+    .thankyou-box-inner h1 {
+        font-size: 36px;
+    }
+    .thankyou-box {
+        width: 66%;
+    }
+    /* Thank you page */
+
+}
+
+@media only screen and (max-width: 768.98px) {
+    /* career page */
+    #jobDetailsModal .modal-body, #jobDetailsModal .modal-footer, #jobDetailsModal .modal-header {
+        padding: 15px 15px;
+    }
+    /* career page */
+
+    /* Domain All Pages */
+    .domain-s-n-item-left, .domain-s-n-item-right, .domain-search-block-title {
+        padding: 20px 25px;
+    }
+    /* Domain All Pages */
+
+}
+
+/*=======================================
+      For Small Devices
+=========================================*/
+@media only screen and (max-width: 767.98px) {
+
+    /* Menu area */
+    .top-menu-area {
+        padding: 8px 0;
+    }
+    .top-menu-item.top-menu-right, .top-menu-item.top-menu-left {
+        text-align: center;
+    }
+    .top-menu-item ul li a {
+        padding: 3px 0;
+    }
+    /* Menu area */
+
+    /* Hero area */
+    .search-domain-area form {
+        width: 433px;
+    }
+    .search-domain-area form input {
+        width: 73%;
+    }
+    /*Hero Area*/
+
+    /* Pricing Plan */
+    .pricing-plan-area tbody th, .pricing-plan-area tbody td {
+        min-width: 180px;
+    }
+    /* Pricing Plan */
+
+    /* One click install */
+    .one-click-install-item {
+        padding: 40px 15px;
+    }
+    /* One click install */
+
+    /* Testimonial */
+    .customer-testimonial-quote {
+        display: none;
+    }
+    .customer-testimonial-item {
+        width: 100%;
+        padding: 30px 30px 30px 30px;
+        margin-left: 0;
+    }
+    .owl-small .owl-nav {
+        margin-left: 0;
+    }
+    /* Testimonial */
+
+    /* Blog Section */
+    .blog-item, .blog-item.featured-blog-item {
+        flex-direction: column;
+    }
+    .blog-item-content, .featured-blog-item .blog-item-content, .featured-blog-post-area .featured-blog-item .blog-item-content {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .blog-img, .featured-blog-item .blog-img {
+        width: auto;
+        overflow: hidden;
+    }
+    .blog-img img, .featured-blog-item .blog-img img {
+        height: auto;
+    }
+    /* Blog Section */
+
+    /* Blog Details Page */
+    .blog-details-post-related-info .post-related-info-item-wrap:after {
+        display: none;
+    }
+    /* Blog Details Page */
+
+    /* Breadcrumb Area */
+    .breadcrumb-area {
+        padding: 132px 0 0px!important;
+    }
+    /* Breadcrumb Area */
+
+    /* Login Page */
+    .page-banner-area .floating-dot, .login-page-area .floating-dot,
+    .page-banner-area .floating-cross, .login-page-area .floating-cross {
+        z-index: -1;
+    }
+    /* Login Page */
+
+    /* Error Page */
+    .error-content h3 {
+        font-size: 22px;
+    }
+    /* Error Page */
+
+    /* About Page */
+    .about-feature-item {
+        text-align: center;
+    }
+    /* About Page */
+
+    /* Affiliate page */
+    .affiliate-joining-the-program-area {
+        padding-bottom: 0;
+    }
+    /* Affiliate page */
+
+    /* Pricing Comparison */
+    .pricing-table-wrap colgroup {
+        min-width: 160px;
+    }
+    /* Pricing Comparison */
+
+    /* Hosting all Pages */
+    .vps-customize-box-item {
+        min-height: 95px;
+    }
+    .wordpress-plan-top {
+        padding: 66px 30px 40px;
+    }
+    /* Hosting all Pages */
+
+    /* Domain All Pages */
+    .transfer-domain-form .faq-search-group {
+        width: 100%;
+    }
+    .domain-s-n-item-right {
+        justify-content: flex-start;
+        padding-top: 0!important;
+    }
+    /* Domain All Pages */
+
+    /* Login/Register Page */
+    .login-forgot-btn {
+        text-align: left!important;
+        margin-top: 10px;
+    }
+    /* Login/Register Page */
+
+    /* Thank you Page */
+    .thankyou-wrap {
+        height: 335px;
+    }
+    .thankyou-wrap > img {
+        left: 0;
+    }
+    .thankyou-box-inner {
+        height: 144px;
+    }
+    .headless-subscribe-form.domain-name-checker-form {
+        width: 100%;
+    }
+    .headless-subscribe-form .faq-search-group .input-group-text {
+        min-width: 116px;
+        height: 51px;
+    }
+    /* Thank you Page */
+   
+}
+
+/*========================================
+    For large mobile
+=========================================*/
+
+@media only screen and (max-width: 766.98px){
+
+}
+@media only screen and (min-width: 480px) and (max-width: 766px){
+  
+}
+
+@media only screen and (min-width: 576px) and (max-width: 700px) { 
+
+}
+
+@media only screen and (max-width:575.98px) {
+    .coming-soon-title {
+        font-size: 34px;
+    }
+
+    .section-title, .section-sub-heading, .develop-locally-area .section-title,
+    .cloud-hosting-service-area .section-title {
+        width: 100%;
+    }
+    .section-sub-heading {
+        margin-bottom: 30px;
+    }
+
+    /* Menu Area */
+    #mainNav, #mainNav.sticky {
+        padding: 15px 15px;
+    }
+    /* Menu Area */
+
+    /* Hero area */
+    .hero-main-title {
+        width: 100%;
+        font-size: 36px;
+    }
+    .hero-sub-title {
+        width: 100%;
+    }
+    .hero-floating-img {
+        display: none;
+    }
+    .search-domain-area {
+        padding: 40px 15px;
+    }
+    .search-domain-area form {
+        width: 340px;
+    }
+    .search-domain-area form button {
+        top: 10px;
+    }
+    .search-domain-area form button span {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+    .search-domain-area form input {
+        width: 68%;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    .domain-name-list-wrap {
+        margin-top: 30px;
+    }
+    .domain-name-item {
+        padding: 18px 14px;
+        min-width: 90px;
+        height: 80px;
+    }
+    .domain-name-item img {
+        height: 16px;
+    }
+    /* Hero area */
+
+    /* One click install */
+    .one-click-install-item {
+        margin-top: 30px;
+    }
+    .one-click-install-item-wrap .col-md-2:first-child .one-click-install-item {
+        margin-top: 0;
+    }
+    /* One click install */
+
+    /* Customer Testimonial */
+    .customer-testimonial-quote {
+        display: none;
+    }
+    .customer-testimonial-item {
+        width: 100%;
+        margin-left: 0;
+        padding: 30px 30px 30px 30px;
+    }
+    .customer-testimonial-right-part {
+        padding-left: 9px;
+    }
+    /* Customer Testimonial */
+
+    /* Blog Page */
+    .blog-list-top-right form {
+        flex-direction: column;
+    }
+    .blog-list-search-group {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .blog-tag {
+        font-size: 13px;
+    }
+    /* Blog Page */
+
+    /* Blog Details Page */
+    .blog-details-quote p {
+        font-size: 16px;
+    }
+    .blog-details-quote {
+        padding: 10px 0 10px 15px;
+        margin: 25px 0;
+    }
+    .blog-details-special-media p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .about-author, .leave-comment-area {
+        padding: 30px 30px;
+    }
+    .blog-comment-item.under-comment {
+        padding-left: 30px;
+    }
+    .blog-comment-item.under-under-comment {
+        padding-left: 45px;
+    }
+    .blog-comment-item .comment-author-img, .author-img {
+        width: 40px;
+        height: 40px;
+    }
+    .blog-comment-item .comment-author-img img, .author-img img {
+        min-height: 40px;
+        height: 40px;
+    }
+    .blog-comment-title {
+        margin-bottom: 20px;
+    }
+    .author-details {
+        width: calc( 100% - 64px);
+    }
+    /* Blog Details Page */
+
+    /* Inner Page Banner Area */
+    .page-banner-content.section-title {
+        width: 97%;
+    }
+    /* Inner Page Banner Area */
+
+    /* Terms and Service page */
+    .terms-service-box h4 {
+        font-size: 25px;
+    }
+    /* Terms and Service page */
+
+    /* faq page */
+    .faq-left-part .nav-pills .nav-link h5 {
+        font-size: 14px;
+    }
+    .tab-content-title-part h3 {
+        font-size: 21px;
+    }
+    
+    .accordion-item {
+        border: none;
+        padding: 0px 0;
+    }
+    .accordion-button {
+        padding: 2px 0 2px 28px;
+        font-size: 14px;
+    }
+    .accordion-button::after {
+        background-size: 1rem;
+        width: 1rem;
+        height: 1rem;
+    }
+    /* faq page */
+
+    /* Contact Page */
+    .sign-up-for-call-to-action {
+        padding: 66px 25px;
+    }
+    .sign-up-for-call-to-action .floating-minus-left {
+        left: -66px;
+    }
+    .sign-up-for-call-to-action .floating-minus-right {
+        right: -66px;
+    }
+    /* Contact Page */
+
+    /* About page */
+    .about-feature-item img {
+        height: 60px;
+    }
+    /* About page */
+
+    /* Affiliate Application form page */
+    .affiliate-application-block-title {
+        flex-direction: column;
+        align-items: flex-start!important;
+    }
+    /* Affiliate Application form page */
+
+    /* Affiliate page */
+    .affiliate-banner-item {
+        width: 100%!important;
+        flex-direction: column;
+        align-items: flex-start!important;
+    }
+    .easy-to-sell-item h4 {
+        font-size: 22px;
+    }
+    /* Affiliate page */
+
+    /* Career Page */
+    .job-item-info{
+        flex-direction: column;
+        align-items: flex-start!important;
+    }
+    .job-info-box {
+        margin-bottom: 15px;
+    }
+    .job-info-box-value {
+        margin-top: 7px;
+    }
+    .powerful-affiliate-item h4, .where-work-content h4 {
+        font-size: 20px;
+    }
+    .job-details-title {
+        flex-direction: column;
+        align-items: flex-start!important;
+    }
+    .job-details-content .job-company-logo {
+        margin-left: 0!important;
+        margin-top: 10px;
+    }
+    /* Career Page */
+
+    /* Pricing Comparison */
+    .pricing-table-wrap .table>:not(caption)>*>* {
+        padding: 1rem 1.2rem;
+    }
+    /* Pricing Comparison */
+
+    /* Hosting All Pages */
+    .email-hosting-support-center {
+        display: block;
+    }
+    .email-hosting-support-center li {
+        margin-right: 0;
+        margin: 12px 0px;
+    }
+    /* Hosting All Pages */
+
+    /* Domain All Pages */
+    .domain-name-checker-name-list-wrap {
+        margin-bottom: 25px;
+    }
+    .transfer-domain-form .faq-search-group .input-group-text {
+        min-width: 101px;
+    }
+    /* Domain All Pages */
+
+    /* Thank you page */
+    .thankyou-wrap {
+        height: 337px;
+    }
+    .thankyou-wrap > img {
+        height: auto;
+        min-height: 100%;
+    }
+    .thankyou-box {
+        width: 78%;
+        height: 184px;
+        background-size: contain;
+    }
+    .thankyou-box-inner {
+        height: 184px;
+    }
+    .headless-subscribe-form .faq-search-group .input-group-text {
+        min-width: 108px;
+    }
+    /* Thank you page */
+
+    /* Coming Soon Page */
+    .countdown-item {
+        width: 80%;
+        margin: 0 auto 25px;
+    }
+    /* Coming Soon Page */
+
+ }
+
+
+@media only screen and (max-width:549px) {
+    /* thank you page */
+    .thankyou-box-inner {
+        height: 169px;
+    }
+    .thankyou-box {
+        width: 80%;
+        height: 169px;
+    }
+    /* thank you page */
+}
+
+@media only screen and (max-width:498px) {
+    /* thank you page */
+    .thankyou-box {
+        width: 72%;
+        height: 144px;
+    }
+    .thankyou-box-inner {
+        height: 133px;
+    }
+    /* thank you page */
+}
+@media only screen and (max-width:480px) {
+
+    /* Menu Area */
+    .hero-content .theme-button {
+        margin: 0 5px;
+    }
+    /* Menu Area */
+
+    /* Let your site run */
+    .let-your-site-run .floating-img-1, .let-your-site-run .floating-img-2,
+    .let-your-site-run .floating-img-3, .let-your-site-run .floating-img-4 {
+        display: none;
+    }
+    /* Let your site run */
+
+    /* blog section */
+    .blog-img, .featured-blog-item .blog-img {
+        height: auto;
+        width: 224px;
+        width: 100%!important;
+    }
+    /* blog section */
+
+    /* Login Page */
+    .login-content {
+        padding: 30px;
+    }
+    /* Login Page */
+
+    /* Error Page */
+    .error-content h3 {
+        margin: 15px 0 20px;
+    }
+    /* Error Page */
+
+    /* Faq page */
+    .faq-search-group {
+        width: 97%;
+    }
+    /* Faq page */
+
+    /* Contact page */
+    .contact-info-box {
+        width: 120px;
+        padding: 22px 17px;
+        margin-right: 10px;
+        height: 104px;
+        margin-bottom: 10px;
+    }
+    .contact-info-box img {
+        height: 30px;
+    }
+    .contact-info-box h6 {
+        font-size: 16px;
+    }
+    /* Contact page */
+
+    /* Thankyou Page */
+    .thankyou-wrap {
+        height: 290px;
+    }
+    .thankyou-box {
+        width: 61%;
+        height: 117px;
+    }
+    .thankyou-box-inner {
+        height: 116px;
+    }
+    /* Thankyou Page */
+
+}
+
+/*=========================================
+      For very little mobile
+=========================================*/
+@media only screen and (max-width:450px) {
+
+    /* Hero Area */
+    .search-domain-area form {
+        width: 310px;
+    }
+    /* Hero Area */
+
+    /* Domain All Pages */
+    .col-md-6.domain-s-n-item-left, .domain-s-n-item-right {
+        flex-direction: column;
+        align-items: flex-start!important;
+    }
+    .save-percent-btn, .domain-s-n-item-right .theme-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    /* Domain All Pages */
+
+    /* Thank you page */
+    .thankyou-box-inner h1 {
+        font-size: 30px;
+    }
+    .thankyou-box {
+        width: 79%;
+        height: 130px;
+        background-size: contain;
+    }
+    /* Thank you page */
+
+}
+@media only screen and (max-width:441px) {
+
+}
+@media only screen and (max-width:428px) {
+  
+}
+
+@media only screen and (max-width:400px) {
+
+    /* Hero area */
+    .hero-area-btns .theme-btn-transparent span {
+        padding: 8px 23px;
+    }
+    .hero-play-btn-wrap {
+        height: 42px;
+        width: 42px;
+    }
+    .hero-play-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 20px;
+    }
+    /* Hero area */
+    
+    /* Domain all page */
+    .popular-domain-extension-item img {
+        height: 30px;
+    }
+    /* Domain all page */
+
+    /* Thankyou page */
+    .thankyou-box {
+        width: 80%;
+        height: 130px;
+    }
+    .thankyou-box-inner {
+        height: 89px;
+    }
+    .thankyou-box-inner h1 {
+        font-size: 28px;
+    }
+    /* Thankyou page */
+
+}
+
+@media only screen and (max-width:370px) {
+    /* Hero area */
+    .hero-content .theme-button {
+        margin: 0 3px;
+        padding: 8px 2px;
+    }
+    .hero-content .theme-button img {
+        height: 37px;
+    }
+    .search-domain-area form {
+        width: 266px;
+    }
+    .search-domain-area form input {
+        width: 61%;
+    }
+    .search-domain-area form button span {
+        padding: 8px 9px;
+    }
+    .domain-name-item {
+        padding: 13px 14px;
+        min-width: 78px;
+        height: 74px;
+    }
+    /* Hero area */
+
+    /* Contact page */
+    .sign-up-for-call-to-action .floating-minus-left {
+        left: -24%;
+    }
+    .sign-up-for-call-to-action .floating-minus-right {
+        right: -24%;
+    }
+    /* Contact page */
+
+}
+
+@media only screen and (min-width:300px) and (max-width:410px) { 
+    .form-control {
+        font-size: 14px;
+    }
+
+
+}
+@media only screen and (min-width:300px) and (max-width:479px) {
+  /*Header Area*/
+  
+    p {
+        font-size: 16px;
+    }
+
+    /* Hero area */
+    .hero-heading {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .top-menu-item ul li, .top-menu-item ul li a {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:350px) { 
+
+    /* Hero area */
+    .search-domain-area form {
+        width: 248px;
+    }
+    .domain-search-custom-placeholder {
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    .search-domain-area form input {
+        font-size: 14px;
+    }
+    /* Hero area */
+
+    /* thankyou page */
+    .thankyou-wrap {
+        height: 200px;
+    }
+    /* thankyou page */
+}
+/*-------------------------------------------
+    40. Responsive Design End
+-------------------------------------------*/

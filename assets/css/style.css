@@ -1,0 +1,4021 @@
+/*
+-------------------------------------------------
+  Theme Name: Hostzai - HTML5 Responsive Template
+  Theme URL: 
+  Author: zainiktheme
+  Author URL: https://themeforest.net/user/zainiktheme
+  Creation Date: 04-10-2021
+  Description:A default stylesheet for Hostzai - HTML5 Responsive Template
+  Version: 1.00
+  Primary use: domain, whcms, hosting, responsive, bootstrap, html5, clean, modern, creative etc.
+
+  ---------------------------------------------------
+  Developed By: zainiktheme
+  Developer URL: https://themeforest.net/user/zainiktheme
+  Developer: Suraiya Aysha
+
+  ---------------------------------------------------
+
+  --------------------------------------------------
+  Table of Contents
+  --------------------------------------------------
+  1. General CSS
+  2. Typography CSS
+  3. Button CSS
+  4. Navbar CSS
+  5. Scroll To Top Area
+  6. Preloader Area Start
+  7. Header Area
+  8. Oneclick install Area
+  9. Let Your Site Run Area
+  10. Deploy Your site Map Area
+  11. Pricing Plan Area
+  12. Brand Logo Slider
+  13. Enjoy Top Rated Hosting Support
+  14. develop-locally-area
+  15. Customer Testimonial Area
+  16. Latest Blog Area
+  17. FAQ Area Start
+  18. Footer Area
+  19. Section Breadcrumb
+  20. Featured Blog Post
+  21. Blog Item List
+  22. Blog Details Area
+  23. Inner Page Banner
+  24. Terms and Service
+  25. Login Page
+  26. Error Page Area Page
+  27. Contact Page
+  28. About us Page
+  29. Affiliate Application Form
+  30. Affiliate Page Page
+  31. Career Page
+  32. Job Form Page
+  33. Pricing Default Page
+  34. VPS Hosting Plan Page
+  35. Pricing Comparison Page
+  36. Hosting all individual
+  37. Domain All Page
+  38. Thank you Page Area
+  39. coming Soon Page
+  40. Responsive CSS
+
+------------------------------------------------ */
+
+
+/*-----------------------------------------------
+    1. General Style
+-------------------------------------------------*/
+
+  * {
+      margin: 0;
+      padding: 0;
+      border: none;
+      outline: none;
+  }
+
+  body,
+  html {
+      height: 100%;
+      margin: 0;
+  }
+
+body {
+    background: #fff none repeat scroll;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Inter', sans-serif;
+    color: var(--para-color);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: var(--heading-color);
+}
+a:hover {
+    color: var(--theme-green);
+}
+/* Theme All Transitions
+------------------------------- */
+a, #mainNav, .navbar .dropdown .dropdown-toggle::after, .theme-btn , .theme-button1, .theme-button2, button, .owl-carousel button.owl-dot,
+.instructor-support-item, .instructor-social ul li a svg, button, .course-img-wrap img, .course-img-wrap:before, .course-item-hover-btns {
+    transition: all .5s ease-in-out;
+}
+.fast-transition, .message-user-item {
+    transition: all .3s ease-in-out;
+}
+.slow-transition{
+    transition: all .7s ease-in-out;
+}
+
+  ul li {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+  }
+
+  ul {
+      margin: 0;
+      padding: 0;
+  }
+
+  a,
+  a > * {
+      outline: none;
+      cursor: pointer;
+      text-decoration: none;
+  }
+
+  a:hover {
+      text-decoration: none;
+  }
+
+  img::selection {
+    background: transparent;
+  }
+  .page-link:focus {
+    box-shadow: none;
+  }
+
+  /*----Form Control Reset CSS----*/
+
+.form-control, .form-select {
+    background-color: #fff;
+    height: 53px;
+    color: var(--para-color);
+    border: 1px solid var(--black);
+    border-radius: 0;
+}
+  .form-control:focus {
+      background-color: #fff;
+      box-shadow: none;
+  }
+.form-select:focus {
+    border-color: inherit;
+    box-shadow: none;
+}
+.form-control::placeholder {
+    color: #848289;
+}
+label {
+    margin-bottom: 10px;
+}
+.form-check-input:focus {
+    border-color: var(--black);
+    box-shadow: none;
+}
+.form-check-input:checked {
+    background-color: var(--black);
+    border-color: var(--black);
+}
+.form-check-input[type=checkbox] {
+    border-radius: 0;
+}
+.form-check-input {
+    width: 1.2em;
+    height: 1.2em;
+    border-color: var(--black);
+}
+.form-check .form-check-input {
+    position: relative;
+    top: -1px;
+}
+textarea {
+    min-height: 120px!important;
+    height: auto!important;
+}
+
+/*------------------------------------------
+    2. Typography
+-------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+.h5,
+h6 {
+    font-weight: 600;
+    margin: 0;
+    color: var(--heading-color);
+}
+h1 {
+    font-size: 68px;
+}
+h2 {
+    font-size: 48px;
+}
+h3 {
+    font-size: 42px;
+    line-height: 140%;
+}
+h4 {
+    font-size: 30px;
+    line-height: 140%;
+}
+h5, .h5 {
+    font-size: 24px;
+    line-height: 130%;
+}
+h6 {
+    font-size: 20px;
+    line-height: 160%;
+}
+.big-para {
+    font-size: 18px;
+    line-height: 150%;
+}
+
+p {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--para-color);
+    line-height: 150%;
+}
+
+figure {
+    margin: 0 0 0;
+}
+
+/*--------------------------------
+    2.1 Theme Color
+-----------------------------------*/
+:root {
+    --white-color: #fff;
+    --black: #151022;
+    --heading-color: #151022;
+    --dark-black: #000;
+    --light-green: #F0FCEC;
+    --text-green: #6FAE59;
+    --theme-green: #5DC839;
+    --blue:#2C9CFE;
+    --black-800: #292633;
+    --para-color: #292633;
+    --black-800-2: #383F5C;
+    --black-900-2: #1F243A;
+
+    --border-color2: rgba(0, 0, 0, 0.09);
+    --font-inter: 'Inter', sans-serif;
+}
+
+.color-heading {
+    color: var(--heading-color);
+}
+.bg-green {
+    background-color: var(--light-green);
+}
+.text-green {
+    color: var(--text-green)!important;
+}
+.bg-black {
+    background-color: var(--black);
+}
+.color-hover {
+    color: var(--theme-color);
+}
+/* default text color */
+.para-color {
+    color: var(--para-color);
+}
+.blue-color {
+    color: var(--blue);
+}
+.color-green {
+    color: var(--light-green)!important;
+}
+.bg-light-green {
+    background-color: var(--light-green);
+}
+.border-green {
+    border: 1px solid #B6D6AC;
+}
+.border-color {
+    border-color: var(--border-color2);
+}
+.border-top {
+    border-top: 1px solid
+}
+.border-bottom {
+    border-bottom: 1px solid
+}
+.border-black {
+    border: 1px solid var(--black);
+}
+.border-top-black {
+    border-top: 1px solid var(--black);
+}
+.table-responsive {
+    position: relative;
+}
+.table {
+    margin-bottom: 25px;
+}
+table tr {
+    transition: .5s ease all;
+}
+button.disabled:hover, button.disabled.theme-button1:hover , button.disabled.theme-button2:hover {
+    color: #fff!important;
+}
+/*--------------------------------
+    2.3 Theme padding, margin
+-----------------------------------*/
+.section-b-space {
+    padding-bottom: 140px;
+}
+.section-t-space {
+    padding-top: 140px;
+}
+.section-b-115-space {
+    padding-bottom: 115px;
+}
+.section-t-115-space {
+    padding-top: 115px;
+}
+.p-30 {
+    padding: 30px;
+}
+.pb-15 {
+    padding-bottom: 15px;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mt-25 {
+    margin-top: 25px;
+}
+.mb-25 {
+    margin-bottom: 25px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mr-30 {
+    margin-right: 30px;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.mr-15 {
+    margin-right: 15px;
+}
+.radius-95 {
+    border-radius: 95px;
+}
+.radius-3 {
+    border-radius: 3px;
+}
+.radius-5 {
+    border-radius: 5px;
+}
+.radius-8 {
+    border-radius: 8px;
+}
+.radius-10 {
+    border-radius: 10px;
+}
+.radius-50 {
+    border-radius: 50%;
+}
+.radius-0 {
+    border-radius: 0;
+}
+
+/*--------------------------------
+    2.3 Theme Font Family, Font Size
+-----------------------------------*/
+.font-normal {
+    font-weight: 400;
+}
+.font-bold {
+    font-weight: 700;
+ }
+.font-semi-bold {
+    font-weight: 600;
+}
+.font-medium {
+    font-weight: 500;
+}
+.font-28 {
+    font-size: 28px;
+    line-height: 36px;
+}
+.font-24 {
+    font-size: 24px;
+    line-height: 31px;
+}
+.font-20 {
+    font-size: 20px;
+    line-height: 31px;
+}
+.font-18 {
+    font-size: 18px;
+    line-height: 19px;
+}
+.font-17 {
+    font-size: 17px;
+}
+.font-16 {
+    font-size: 16px;
+}
+.font-15 {
+    font-size: 15px;
+    line-height: 23px;
+}
+.font-14 {
+    font-size: 14px;
+}
+.font-13 {
+    font-size: 13px;
+    line-height: 18px;
+}
+.font-12 {
+    font-size: 12px;
+    line-height: 13px;
+}
+.font-11 {
+    font-size: 11px;
+    line-height: 12px;
+}
+
+/*--------------------------------
+   2.4 Template Default CSS
+-----------------------------------*/
+section {
+    position: relative;
+    z-index: 9;
+    overflow-x: hidden;
+}
+.section-heading {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+.section-title {
+    width: 48%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.section-sub-heading {
+    margin-bottom: 58px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/*--------------------------------
+   2.5 Template Common CSS
+-----------------------------------*/
+.testimonial-bottom-content .star-full .iconify, .course-single-page-header .star-full .iconify,
+.review-tab-count-box .rating-list .star-full .iconify {
+    color: var(--color-yellow);
+}
+.faq-page-area .section-title {
+    text-align: center;
+}
+.faq-page-area .section-heading {
+    margin: 0 auto 18px;
+}
+.video-area-right .section-heading {
+    width: 100%;
+}
+table .course-item {
+    background-color: transparent;
+}
+
+/*Pagination CSS*/
+.pagination {
+    margin-top: 25px;
+}
+.pagination li {
+    margin-right: 14px;
+    border-radius: 3px;
+}
+.page-item.active .page-link {
+    color: #fff;
+    background-color: var(--theme-color);
+    border-color: var(--theme-color);
+}
+.page-item .page-link .iconify {
+    font-size: 19px;
+    color: #52526C;
+}
+.pagination .page-link {
+    color: var(--gray-color);
+    font-size: 15px;
+    line-height: 16px;
+    background-color: #fff;
+    height: 45px;
+    width: 45px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px!important;
+    border-radius: 3px;
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+    box-shadow: 0 6px 21px rgba(21, 3, 89, 0.08);
+}
+
+/* Default Page Banner */
+.default-page-banner .floating-cross {
+    right: 11%!important;
+    top: 4%!important;
+}
+.default-page-banner .floating-dot {
+    left: 11%!important;
+    top: 7%!important;
+}
+.default-page-banner .floating-minus {
+    left: 12%!important;
+    top: 34%!important;
+}
+/* Default Page Banner */
+
+/*------------------------------------------
+    2.Typography
+-------------------------------------------*/
+
+/*--------------------------------------------
+    3.Button Style
+---------------------------------------------*/
+.section-btn {
+    margin-top: 42px;
+}
+.btn {
+  padding: 0;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+button {
+    background-color: transparent;
+}
+button:focus {
+    outline: 0;
+}
+/*-----Theme Button Style-----*/
+
+/* Button Hover Effect Start */
+.btn {
+    position: relative;
+    display: inline-flex;
+    width: auto; height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.btn span {         
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: capitalize;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 13px 30px;
+    transition: 0.3s;
+}
+
+.btn::before,
+.btn::after {
+    position: absolute;
+    content: "";
+}
+  
+  /*--- btn-1 ---*/
+  .theme-btn::before {
+    background-color: rgb(28, 31, 30);
+    transition: 0.3s ease-out;
+  }
+  .theme-btn span {
+    color: rgb(255,255,255);
+    border: 1px solid rgb(28, 31, 30);
+    transition: 0.2s 0.1s;
+  }
+  .theme-btn span:hover {
+    color: rgb(28, 31, 30);
+    transition: 0.2s 0.1s;
+  }
+  /* 3.hover-filled-slide-left */
+.btn.hover-filled-slide-left::before {
+    top: 0; bottom: 0; left: 0;
+    height: 100%; width: 100%;
+  }
+  .btn.hover-filled-slide-left:hover::before {
+    width: 0%;
+  }
+
+
+  /*--- btn-2 ---*/
+.theme-btn-transparent::before {
+    background-color: rgb(28, 31, 30);
+    transition: 0.3s ease-out;
+  }
+  .theme-btn-transparent span {
+    color: rgb(28, 31, 30);
+    border: 1px solid rgb(28, 31, 30);
+    transition: 0.2s;
+  }  
+  .theme-btn-transparent span:hover {
+    color: rgb(255,255,255);
+    transition: 0.2s 0.1s;
+  }
+
+  /* 8. hover-slide-left */
+.btn.hover-slide-left::before {
+    top: 0; bottom: 0; right: 0; 
+    height: 100%; width: 0%;
+  }
+  .btn.hover-slide-left:hover::before {
+    width: 100%;
+  }
+
+/* Button Hover Effect End */
+/*-------------------------------------------
+    4. Navbar Area CSS
+-------------------------------------------*/
+.container {
+    padding: 0;
+}
+
+/* Top Menu CSS Start */
+.top-menu-area {
+    padding: 0 150px;
+    background-color: var(--black);
+}
+.top-menu-item ul li, .top-menu-item ul li a {
+    color: var(--white-color);
+    align-items: center;
+    display: inline-flex;
+    font-size: 14px;
+}
+.top-menu-item ul li a:hover {
+    color: var(--theme-green);
+}
+.top-menu-item ul li a {
+    padding: 20px 0;
+}
+.top-menu-item.top-menu-left ul li {
+    margin-right: 20px;
+}
+.top-menu-item.top-menu-right ul li {
+    margin-left: 20px;
+}
+.top-menu-item.top-menu-middle {
+    text-align: center;
+}
+.top-menu-item.top-menu-middle span {
+    color: #FFE888;
+    padding: 0 7px;
+}
+.top-menu-item.top-menu-right {
+    text-align: right;
+
+}
+/* Language Dropdown */
+.languageMenu ul {
+    padding: 15px 0!important;
+}
+.languageMenu ul li {
+    margin-left: 0!important;
+    display: flex;
+}
+.languageMenu ul li a {
+    color: var(--black);
+    padding: 7px 30px!important;
+}
+.languageMenu a.dropdown-toggle::after {
+    display: none;
+}
+/* Language Dropdown */
+
+/* Top Menu CSS End */
+
+.menu-section-area {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    z-index: 999;
+    overflow-x: visible;
+}
+@media only screen and (min-width: 992px) {
+    #mainNav {
+        display: block;
+    }
+    .navbar-expand-lg .navbar-nav {
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .navbar-nav {
+        width: 100%;
+    }
+}
+
+/* Main Menu Start */
+.navbar-nav-middle {
+    justify-content: center;
+    padding-left: 100px;
+}
+.navbar-nav-right {
+    justify-content: flex-end;
+}
+.navbar {
+    padding: 0;
+}
+
+#mainNav {
+    position: absolute;
+    display: flex !important;
+    transition: all ease .6s;
+    background: #F0FCEC;
+    padding: 0 30px;
+    align-items: center;
+    width: 100%;
+}
+#mainNav.sticky {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    background-color: var(--white-color);
+    padding: 0 30px;
+    box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
+    animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+#mainNav.sticky .navbar-nav .nav-item .nav-link {
+    padding: 27px 40px 27px 0;
+}
+
+#mainNav .navbar-brand {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-right: 0;
+    height: 100%;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+    padding: 35px 40px 35px 0;
+    position: relative;
+    font-weight: 500;
+    color: var(--black);
+    display: flex;
+    transition: ease all .5s;
+}
+#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link.active {
+    color: var(--theme-green);
+}
+
+/*Menu Right Side round buttons End */
+
+/*---- Dropdown Menu CSS ----*/
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--heading-color);
+    background-color: #F0FCEC;
+}
+.navbar .dropdown .dropdown-toggle:after {
+    margin-left: .375rem;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    font-family: Feather!important;
+    content: "\e92e";
+    background-repeat: no-repeat;
+    background-size: .625rem .625rem;
+    float: right;
+}
+.navbar .dropdown-menu a::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 1.7rem;
+    color: var(--para-color);
+}
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+}
+#mainNav .navbar-nav .nav-item .nav-link.dropdown-toggle svg {
+     height: 17px;
+}
+#mainNav .navbar-nav .nav-item .nav-link svg {
+    height: 25px;
+    width: 27px;
+    padding-top: 2px;
+}
+#mainNav .navbar-nav .dropdown-menu a {
+    color: var(--para-color);
+    padding: 8px 45px 8px 30px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+.navbar .dropdown-menu .dropdown-toggle::after {
+    color: var(--para-color);
+}
+#mainNav .navbar-nav .dropdown-menu a, #mainNav .navbar-nav .dropdown-menu a h6, .navbar .dropdown-menu .dropdown-toggle::after {
+    transition: ease all .5s;
+}
+#mainNav .navbar-nav .dropdown-menu a:hover, #mainNav .navbar-nav .dropdown-menu a:hover h6, .navbar .dropdown-menu .dropdown-toggle:hover::after {
+    color: var(--theme-green);
+    background-color: transparent;
+}
+/* Hosting Dropdown Menu Start */
+.dropdown-menu {
+    border-radius: 0;
+}
+.hostingMenu .dropdown-menu {
+    width: 45rem;
+}
+.dropdown-item {
+    white-space: normal;
+    padding: 0!important;
+}
+.hostingMenu .hosting-menu-item, .domainMenu .hosting-menu-item {
+    margin-bottom: 19px;
+    margin-top: 20px;
+}
+.hostingMenu .hosting-menu-icon, .domainMenu .hosting-menu-icon {
+    width: 54px;
+    height: 54px;
+    background-color: #F0FCEC;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hosting-top-menu, .application-for-hosting {
+    padding: 18px 30px;
+}
+.hosting-top-menu {
+    background-color: var(--white-color);
+}
+.application-for-hosting {
+    background-color: #F8F8F8;
+}
+.hostingMenu .application-for-hosting .hosting-menu-icon {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+}
+/* Hosting Dropdown Menu End */
+
+/* Domain Dropdown Menu Start */
+.domainMenu .dropdown-menu {
+    width: 22rem;
+}
+/* Domain Dropdown Menu End */
+
+/* Page Dropdown Menu Start */
+.pageMenu .dropdown-menu {
+    width: 15rem;
+}
+.pageMenu .dropdown-item {
+    padding: 10px 0!important;
+    font-size: 17px!important;
+}
+/* Page Dropdown Menu End */
+
+/* Menu User Btn CSS Start*/
+.menu-user-btn .dropdown-menu {
+    min-width: 14.7rem;
+}
+.menu-user-btn a {
+    margin-right: 0;
+}
+.menu-user-btn img {
+    height: 31px;
+    width: 31px;
+}
+.user-dropdown-item-box {
+    border-top: 1px solid #EEE9E9;
+    padding-top: 10px;
+    margin: 10px 24px 0;
+}
+.menu-user-btn .message-user-item:hover {
+    background-color: transparent;
+}
+.menu-user-btn .dropdown-menu a {
+    padding: 8px 45px 8px 0!important;
+}
+.menu-user-btn .dropdown-menu a .iconify {
+    margin-right: 15px;
+    font-size: 18px;
+}
+/* Menu User Btn CSS End*/
+
+/*User Login or Not Login Function for Menu Start*/
+.menu-notification-btn, .menu-message-btn,.menu-user-btn, .isLoginMenu .menu-sign-in-btn {
+    display: none;
+}
+.isLoginMenu .menu-notification-btn, .isLoginMenu .menu-message-btn, .isLoginMenu .menu-user-btn {
+    display: block;
+}
+/*User Login or Not Login Function for Menu End*/
+
+/*Multilevel Dropdown Menu CSS Start*/
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    
+    /* New */
+    .navbar-brand.desktop-navbar-brand {
+        display: flex!important;
+    }
+    .navbar-brand.mobile-navbar-brand {
+        display: none!important;
+    }
+    /* New */
+
+    .navbar-nav .dropdown-menu {
+        position: absolute!important;
+    }
+    .dropdown-menu li{
+        position: relative;
+    }
+    .dropdown-menu .submenu{
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        left:100%;
+        top:10px;
+    }
+    .dropdown-menu .submenu-left {
+        right:100%;
+        left:auto;
+    }
+
+    .dropdown-menu > li:hover {
+        background-color: transparent;
+    }
+    .dropdown-menu > li:hover > .submenu {
+        visibility: visible;
+        opacity: 1;
+        top:-7px;
+    }
+
+    /* Show Dropdown Menu on Hover instead Click Start */
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: .2s ease-in;
+    }
+    .navbar .nav-item:hover > .dropdown-menu {
+        display: block;
+        transform: scaleY(1);
+        opacity: 1;
+        visibility: visible;
+        transition: .3s ease-out;
+    }
+    .top-menu-item .nav-item .dropdown-menu {
+        transform: translateY(20px);
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        transition: .2s ease-in;
+    }
+    .top-menu-item .nav-item:hover > .dropdown-menu {
+        transform: scaleY(1);
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        transition: .3s ease-out;
+        z-index: 9999;
+    }
+    .navbar .nav-item .dropdown-menu, .top-menu-item .nav-item .dropdown-menu {
+        margin-top: 0;
+        box-shadow: 0px 10px 29px rgba(202, 202, 202, 0.25);
+        border: 0;
+        border-radius: 0;
+        padding: 18px 30px;
+    }
+
+    /* Show Dropdown Menu on Hover instead Click End */
+}
+
+/*Menu Mobile Responsive CSS Start*/
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+/*Menu Mobile Responsive CSS End*/
+
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+    .navbar-brand.desktop-navbar-brand {
+        display: none!important;
+    }
+    .navbar-brand.mobile-navbar-brand {
+        display: flex!important;
+    }
+
+    .dropdown-menu .dropdown-menu {
+        margin-left:0.7rem;
+        margin-right:0.7rem;
+        margin-bottom: .5rem;
+    }
+
+}
+/* ============ small devices .end// ============ */
+/*Multilevel Dropdown Menu CSS End*/
+
+/*-------------------------------------------
+    5. Scroll To Top Area
+-------------------------------------------*/
+#scroll {
+    position: fixed;
+    right: 10px;
+    bottom: 40px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: none;
+    z-index: 10;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    line-height: 48px;
+}
+/*-------------------------------------------
+    5. Scroll To Top Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    6. Preloader Area Start
+-------------------------------------------*/
+#preloader {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999999999999;
+}
+
+#preloader_status {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+/*-------------------------------------------
+    6. Preloader Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    7. Header Area
+-------------------------------------------*/
+.hero-area {
+    background-color: var(--light-green);
+}
+.hero-content {
+    padding: 240px 0 90px;
+}
+.limited-time-sale {
+    margin-bottom: 25px;
+}
+.limited-time-sale p {
+    background-color: #FFE888;
+    display: inline-flex;
+    padding: 10px 20px;
+}
+.hero-main-title {
+    width: 75%;
+    margin: 0 auto 44px;
+}
+.hero-sub-title {
+    width: 45%;
+    margin: 0 auto 35px;
+    line-height: 150%;
+}
+.hero-content .theme-button {
+    margin: 0 12px;
+}
+.hero-area-btns .theme-btn-transparent span {
+    padding: 15px 30px;
+}
+.play-btn-wrap {
+    align-items: center;
+    display: flex;
+}
+.hero-play-btn-wrap {
+    border: 1px dashed var(--black);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 52px;
+    width: 52px;
+    transition: all .5s ease-in-out;
+}
+.hero-play-btn-wrap:hover {
+    border: 1px dashed var(--text-green);
+}
+.hero-play-btn-wrap:hover .hero-play-btn {
+    background-color: var(--text-green);
+    color: var(--white-color);
+}
+.hero-play-btn {
+    width: 36px;
+    height: 36px;
+    background-color: var(--black);
+    color: var(--white-color);
+    display: inline-flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    transition: all .5s ease-in-out;
+}
+.hero-play-btn .iconify {
+    position: relative;
+    left: 2px;
+}
+/* Domain Name Search */
+.search-domain-section {
+    margin-bottom: 152px;
+}
+
+.search-domain-area form {
+    border: 1px solid var(--black);
+    display: flex;
+    height: 60px;
+    width: 796px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--white-color);
+}
+
+.domain-search-custom-placeholder {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 13px;
+    background: #fff;
+    color: #848289;
+    border-radius: 5px;
+}
+
+.search-domain-area form input {
+    width: 82%;
+    min-width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.domain-search-input-wrap {
+    height: 58px;
+}
+.search-domain-area form .form-row {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.search-domain-area form button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+.search-domain-area form .form-control:focus {
+    border-color: transparent;
+}
+.search-domain-area form button span {
+    padding: 8px 20px;
+}
+.search-domain-area {
+    background-color: var(--white-color);
+    padding: 60px 140px;
+    border: 1px solid #B6D6AC;
+    position: relative;
+    margin-bottom: -152px;
+}
+.domain-name-list-wrap {
+    justify-content: center;
+    margin-top: 47px;
+    flex-wrap: wrap;
+}
+.domain-name-item {
+    border: 1px solid #C7C7C7;
+    padding: 26px 22px;
+    min-width: 120px;
+    height: 100px;
+    text-align: center;
+    margin: 0 8px;
+}
+
+/* Domain search animation effect start */
+::-webkit-input-placeholder {
+    display: inline-block;
+    opacity: 0.2;
+    transition: all 0.3s ease-in-out;
+    padding-right: 0.15em;
+    white-space: nowrap;
+  }
+  
+  input:focus::-webkit-input-placeholder {
+    -webkit-transform: translateY(-125%);
+    font-size: 75%;
+    opacity: 0.05;
+  }
+  
+  input.imitatefocus::-webkit-input-placeholder {
+    -webkit-transform: translateY(-125%);
+    opacity: 0.05;
+  }
+  
+/* Domain search animation effect end */
+
+/* Domain Name Search */
+.hero-price {
+    background-image: url("../img/hero-price-underline.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    padding-bottom: 15px;
+}
+
+/* Hero Floating Image Start */
+.hero-floating-img {
+    top: 184px;
+}
+
+.hero-floating-img-1 {
+    left: 150px;
+}
+
+.hero-floating-img-2 {
+    right: 150px;
+}
+/* Hero Floating Image End */
+
+/*-------------------------------------------
+    7. Header Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    8. Oneclick install Area Start
+-------------------------------------------*/
+.one-click-install-item {
+    border: 1px solid var(--black);
+    box-shadow: -4px 4px 0px var(--dark-black);
+    padding: 57px 32px;
+    background-color: var(--white-color);
+    text-align: center;
+    transition: ease all .5s;
+}
+.one-click-install-item:hover {
+    box-shadow: 4px 4px 0px var(--dark-black);
+}
+.one-click-install-item-wrap .col-md-2:nth-child(even) .one-click-install-item {
+    margin-top: 74px;
+}
+
+/* Floating image */
+.one-click-install-area .float-img-1 {
+    top: 153px;
+    z-index: -1;
+}
+.one-click-install-area .float-img-2 {
+    right: 80px;
+    bottom: 120px;
+    z-index: -1;
+}
+
+/*-------------------------------------------
+    8. Oneclick install Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    9. Let Your Site Run Area Start
+-------------------------------------------*/
+.let-your-site-left-part-wrap {
+    margin: 50px 0;
+    padding-right: 0;
+}
+.let-your-site-left-part {
+    height: 100%;
+    padding: 160px 68px;
+    position: relative;
+    right: -1px;
+}
+.let-your-site-run-item {
+    padding: 40px 30px;
+    border: 1px solid var(--black);
+    margin: 12px 0;
+    min-height: 342px;
+}
+
+/* Floating image */
+.let-your-site-run .floating-img-1 {
+    top: 60px;
+    left: -5px;
+}
+.let-your-site-run .floating-img-2 {
+    bottom: 60px;
+    left: 60px;
+}
+.let-your-site-run .floating-img-3 {
+    top: 158px;
+    right: 122px;
+}
+.let-your-site-run .floating-img-4 {
+    right: 0;
+    bottom: 81px;
+}
+
+/*-------------------------------------------
+    9. Let Your Site Run Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    10. Deploy Your site Map Area Start
+-------------------------------------------*/
+.data_center_location-map .l_info .info-box {
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out
+}
+.data_center_location-map .l_info .circle-ball, .data_center_location-map .l_info .circle-ball:after {
+    background-color: var(--black);
+}
+.data_center_location-map .l_info .info-box {
+    background-color: #fff;
+}
+.data_center_location-map .l_info .info-box {
+    -webkit-box-shadow: 0 0 30px rgba(24, 104, 222, .1);
+    box-shadow: 0 0 30px rgba(24, 104, 222, .1)
+}
+.data_center_location-map {
+    position: relative;
+    display: inline-block
+}
+
+.data_center_location-map .l_info {
+    position: absolute;
+    left: 5%;
+    top: 8%;
+}
+
+.data_center_location-map .l_info.l_info2 {
+    left: 32%;
+    top: 70%;
+}
+
+.data_center_location-map .l_info.l_info3 {
+    left: 82%;
+    top: 37px;
+}
+
+.data_center_location-map .l_info.l_info4 {
+    left: 46%;
+    top: 48%;
+}
+
+.data_center_location-map .l_info.l_info5 {
+    left: 71%;
+    top: 28%;
+}
+
+.data_center_location-map .l_info.l_info6 {
+    left: 83%;
+    top: 73%;
+}
+
+.data_center_location-map .l_info.l_info7 {
+    left: 17%;
+    top: 32%;
+}
+
+.data_center_location-map .l_info.l_info8 {
+    left: 57%;
+    top: 58%
+}
+
+.data_center_location-map .l_info.l_info9 {
+    left: 74%;
+    top: 47%
+}
+
+.data_center_location-map .l_info.l_info10 {
+    left: 94%;
+    top: 18%
+}
+
+.data_center_location-map .l_info.l_info11 {
+    left: 63%;
+    top: 18%
+}
+
+.data_center_location-map .l_info.l_info12 {
+    left: 83%;
+    top: 75%
+}
+
+.data_center_location-map .l_info .circle-ball {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+    position: relative;
+    cursor: pointer
+}
+
+.data_center_location-map .l_info .circle-ball:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    z-index: -1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation: ripple2 1.5s 0s infinite;
+    animation: ripple2 1.5s 0s infinite
+}
+
+.data_center_location-map .l_info .info-box {
+    padding: 12px 12px 8px;
+    position: relative;
+    position: absolute;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 0;
+    bottom: 20px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    border: 1px solid #B4DEA6;
+}
+
+.data_center_location-map .l_info .info-box:after {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 12px solid #B4DEA6;
+    position: absolute;
+    content: "";
+    bottom: -12px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.data_center_location-map .l_info .info-box h5 {
+    font-size: 15px;
+    margin-block-start: 7px;
+}
+
+.data_center_location-map .l_info.active .info-box {
+    opacity: 1;
+    visibility: visible;
+    bottom: 30px
+}
+@-webkit-keyframes ripple2 {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: .8
+    }
+
+    100% {
+        -webkit-transform: scale(3);
+        transform: scale(3);
+        opacity: 0
+    }
+}
+
+@keyframes ripple2 {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: .8
+    }
+
+    100% {
+        -webkit-transform: scale(3);
+        transform: scale(3);
+        opacity: 0
+    }
+}
+@media only screen and (max-width: 767.98px) {
+    .data_center_location-map .l_info .circle-ball {
+        width: 7px;
+        height: 7px;
+    }
+    .data_center_location-map .l_info.l_info7 {
+        top: 29%;
+    }
+    .data_center_location-map .l_info.l_info6 {
+        top: 69%;
+    }
+    .data_center_location-map .l_info.l_info4 {
+        top: 44%;
+    }
+    .data_center_location-map .l_info.l_info3 {
+        left: 80%;
+        top: 19px;
+    }
+    .data_center_location-map .l_info.l_info2 {
+        left: 30%;
+        top: 63%;
+    }
+    .data_center_location-map .l_info {
+        top: 2%;
+    }
+}
+/*-------------------------------------------
+    10. Deploy Your site Map Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    11. Pricing Plan Area Start
+-------------------------------------------*/
+.pricing-plan-area {
+    background-image: url("../img/hosting-plan.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.pricing-plan-area .hero-floating-img {
+    top: 90px;
+}
+  /* Price table end */
+.pricing-table-wrap table {
+    width: 100%;
+    text-align: left;
+    border-spacing: 0;
+    border-collapse: collapse;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.pricing-table-wrap .table>:not(caption)>*>* {
+    padding: 1.4rem 1.5rem;
+    border-bottom-width: 0px;
+    background-color: #fff;
+    vertical-align: middle;
+}
+.pricing-table-wrap .table>thead {
+    vertical-align: middle;
+}
+.pricing-plan-area thead tr td:first-child {
+    background-color: transparent;
+}
+.pricing-table-wrap thead tr td h3 {
+    padding: 1.1rem 0;
+}
+.pricing-plan-area tbody td {
+    border: 1px solid #B6D6AC;
+}
+
+.pricing-plan-area .table>:not(:first-child) {
+    border-top: 0px solid currentColor;
+}
+.pricing-table-wrap colgroup:nth-child(1) {
+    width: 14%;
+    border: 0 none;
+    border: none;
+}
+.pricing-table-wrap colgroup:nth-child(2) {
+    width: 18%;
+    border: 1px solid #B6D6AC!important;
+}
+.pricing-table-wrap colgroup:nth-child(3) {
+    width: 18%;
+    border: 1px solid #B6D6AC!important;
+}
+.pricing-table-wrap colgroup:nth-child(4) {
+    width: 18%;
+    border: 1px solid #B6D6AC!important;
+}
+  
+  /* Tablebody */
+.pricing-table-wrap tbody td {
+    text-align: center;
+    font-size: 16px;
+    color: black;
+} 
+
+.pricing-plan-area tbody tr:last-child td {
+    border: 1px solid #B6D6AC;
+}
+.table-check-icon {
+    color: var(--theme-green);
+}
+.table-cross-icon {
+    color: #FF0000;
+}
+  /* Price table end */
+  
+  .price-money-back-text {
+    text-align: center;
+    width: 49%;
+    margin: 0 auto;
+    padding-left: 270px;
+    margin-top: 30px;
+}
+/*-------------------------------------------
+    11. Pricing Plan Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    12. Brand Logo Slider Area Start
+-------------------------------------------*/
+.single-logo {
+    text-align: center;
+}
+.brand-carousel.owl-carousel .owl-item img, .operating-brand-carousel .owl-item img,
+ .wordpress-brand-carousel .owl-item img {
+    width: auto;
+    display: inline-block;
+}
+.brand-carousel {
+    border: 1px solid var(--black);
+    padding: 30px;
+}
+
+/* Dedicated server hosting operating logo slider */
+.operating-system-logo-slider-area .section-title {
+    width: 70%;
+}
+.operating-brand-carousel .single-logo, .wordpress-brand-carousel .single-logo {
+    text-align: center;
+    background-color: var(--white-color);
+    border: 1px solid var(--black);
+    padding: 31px 20px;
+}
+
+/*-------------------------------------------
+    12. Brand Logo Slider Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    13. Enjoy Top Rated Hosting Support Area Start
+-------------------------------------------*/
+.enjoy-top-rated-hosting-support-area .section-title {
+    width: 81%;
+    margin: 0;
+    text-align: left;
+}
+.enjoy-top-rated-wrap {
+    align-items: center;
+}
+.hosting-support-item {
+    margin-bottom: 42px;
+}
+.hosting-support-wrap .hosting-support-item:nth-child(n+3), .hosting-support-wrap .hosting-support-item:nth-child(n+4) {
+    margin-bottom: 0;
+}
+.top-rated-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #F0FCEC;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------------------------------------
+    13. Enjoy Top Rated Hosting Support Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    14. develop-locally-area Area Start
+-------------------------------------------*/
+.develop-locally-area .section-title {
+    width: 68%;
+}
+/*-------------------------------------------
+    14. develop-locally-area Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    15. Customer Testimonial Area Start
+-------------------------------------------*/
+.customer-testimonial-area .section-title {
+    width: 100%;
+    text-align: left;
+}
+.owl-big .item {
+    background-color: var(--white-color);
+    text-align: center;
+    padding: 80px 0px;
+    border: 1px solid var(--black);
+    padding: 50px 50px 0;
+}
+  .owl-big.owl-theme {
+    position: relative;
+  }
+  .owl-big.owl-theme .owl-next,
+  .owl-big.owl-theme .owl-prev {
+    position: absolute;
+    top: 50%;
+    width: 22px;
+    height: 40px;
+    margin-top: -20px;
+  }
+  .owl-big.owl-theme .owl-prev {
+    left: 10px;
+  }
+  .owl-big.owl-theme .owl-next {
+    right: 10px;
+  }
+  
+  .owl-small .item {
+    background: var(--white-color);
+    text-align: center;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px 0px;
+  }
+
+/* Customer Testimonial Right Part */
+.customer-testimonial-rating .iconify {
+    color: #c3c2c2;
+    font-size: 20px;
+}
+.customer-testimonial-rating .iconify.star-filled {
+    color: #FFB526;
+}
+
+.customer-testimonial-right-part {
+    padding-left: 18px;
+}
+.customer-testimonial-item {
+    border: 1px solid var(--black);
+    padding: 30px 30px 30px 70px;
+    width: 76%;
+    background-color: var(--white-color);
+    margin-left: 43px;
+}
+.customer-testimonial-quote {
+    height: 78px;
+    width: 78px;
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    padding: 18px;
+    left: -41px;
+    background-color: var(--white-color);
+    z-index: 9;
+    top: 34%;
+}
+.customer-company-logo {
+    height: 17px;
+    width: auto!important;
+    margin-top: 8px;
+}
+
+/* Owl Navigation */
+.owl-small .owl-nav button {
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--black)!important;
+    border-radius: 50%!important;
+    background-color: var(--white-color)!important;
+}
+.owl-small .owl-nav [class*=owl-]:hover {
+    color: var(--text-green)!important;
+}
+.owl-small .owl-dots, .owl-small .owl-nav {
+    text-align: left;
+}
+.owl-small .owl-nav {
+    margin-top: 30px;
+    margin-left: 43px;
+}
+
+/* Customer Testimonial Floating image */
+.customer-testimonial-area .floating-img-2 {
+    bottom: 76px;
+    left: 219px;
+}
+.customer-testimonial-area .floating-img-3 {
+    right: -60px;
+    top: 270px;
+}
+.customer-testimonial-area .floating-img-1 {
+    top: 91px;
+    left: 92px;
+}
+
+.mobile-section-title {
+    display: none;
+}
+.desktop-section-title {
+    display: block;
+}
+
+/*-------------------------------------------
+    15. Customer Testimonial Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    16. Latest Blog Area Start
+-------------------------------------------*/
+.blog-item {
+    border: 1px solid var(--black);
+    padding: 30px;
+    margin-bottom: 26px;
+}
+.blog-item-content {
+    margin-left: 30px;
+}
+.blog-publish-date {
+    margin-bottom: 10px;
+}
+.blog-item-title {
+    margin-bottom: 15px;
+}
+.blog-tag {
+    z-index: 9;
+    padding: 7px 20px;
+    left: 20px;
+    top: 20px;
+}
+.blog-img {
+    height: 224px;
+    width: 224px;
+    overflow: hidden;
+}
+.blog-img img {
+    height: 224px;
+    transform: scale(1);
+    transition: ease all .5s;
+}
+.blog-item:hover .blog-img img {
+    transform: scale(1.1);
+}
+/* Read More Button Effect Start */
+.read-more-btn {
+    margin-top: 30px;
+    display: inline-flex;
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 4px;
+}
+.read-more-btn:hover {
+    border-bottom: 1px solid #5DC839;
+    color: #6FAE59;
+}
+  /* Read More Button Effect End */
+
+/* Featured Blog Style */
+.blog-item.featured-blog-item {
+    padding: 0;
+    border: transparent;
+    flex-direction: column;
+}
+.featured-blog-item .blog-img {
+    min-height: 450px;
+    height: 450px;
+    width: 100%;
+}
+.featured-blog-item .blog-img img {
+    height: 450px;
+}
+.featured-blog-item .blog-item-content {
+    background-color: #fff;
+    margin: -132px 30px 0;
+    position: relative;
+    z-index: 9;
+    border: 1px solid var(--black);
+    padding: 30px;
+}
+/* Blog Title Hover Effect Start */
+.blog-item-title a {
+    color: inherit;
+    width: calc(100%);
+    background-image: linear-gradient(transparent calc(100% - 3px), var(--black) 3px);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.6s;
+}
+.blog-item-title:hover a {
+    background-size: 100% 100%;
+}
+/* Blog Title Hover Effect End */
+
+/*-------------------------------------------
+    16. Latest Blog Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    17. FAQ Area Start
+-------------------------------------------*/
+.faq-search-group {
+    height: 60px;
+    border: 1px solid var(--black);
+    overflow: hidden;
+    margin-top: 30px;
+}
+.faq-search-group .form-control {
+    height: 60px;
+    padding-left: 28px;
+}
+.faq-search-group .input-group-text {
+    width: 70px;
+    height: 60px;
+    background-color: var(--black);
+    justify-content: center;
+    border-radius: 0;
+}
+
+.faq-search-group .input-group-text .iconify {
+    color: var(--white-color);
+    font-size: 19px;
+}
+/* FAQ Left Part */
+.faq-left-part .nav {
+    padding-top: 60px;
+}
+.faq-left-part .nav-pills .nav-link {
+    background: 0 0;
+    border: 0;
+    border-radius: 0;
+    border: 1px solid #E0E0E0;
+    padding: 40px;
+    margin-bottom: 25px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.faq-left-part .nav-pills .nav-link h5 {
+    margin-bottom: 12px;
+}
+
+.faq-left-part .nav-pills .nav-link.active, .faq-left-part .nav-pills .show>.nav-link {
+    border: 1px solid var(--black);
+}
+/* FAQ Left Part */
+
+/* FAQ Right Part */
+.faq-right-part {
+    border-left: 1px solid #B6D6AC;
+    padding-left: 41px;
+}
+.faq-right-part .tab-content {
+    padding-top: 60px;
+}
+.faq-right-part .tab-content .accordion:not(:last-child) {
+    margin-bottom: 88px;
+}
+.faq-right-part .tab-content-title-part {
+    border-bottom: 1px solid #B6D6AC;
+    margin-bottom: 18px;
+    padding-bottom: 32px;
+}
+.faq-right-part .tab-content-title-part h3 {
+    margin-bottom: 10px;
+    margin-top: -13px;
+}
+
+/* Accordion CSS Start */
+.accordion-button {
+    background-color: transparent;
+    padding: 10px 0 10px 36px;
+    font-size: 20px;
+}
+.accordion-button::after {
+    position: absolute;
+    left: 0;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--black);
+    background-color: transparent;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+.accordion-body {
+    padding: 0 1.50rem 0 1.7rem;
+    border-left: 1px solid #E0E0E0;
+    margin: 10px 0;
+    color: var(--black-800);
+    margin-left: 11px;
+}
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+.accordion-item {
+    background-color: transparent;
+    border: none;
+    padding: 5px 0;
+}
+.accordion-button::after {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M12 20v-8m0 0V4m0 8h8m-8 0H4"%2F%3E%3C%2Fsvg%3E');
+    background-size: 1.5rem;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M20 12H4"%2F%3E%3C%2Fsvg%3E');
+}
+/* Accordion CSS End */
+
+/*-------------------------------------------
+    17. FAQ Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    18. Footer Area Start
+-------------------------------------------*/
+.footer-area {
+    background-color: var(--black);
+    padding: 108px 0 0;
+}
+.footer-top-part {
+    padding-bottom: 108px;
+}
+.copyright-wrapper {
+    padding: 35px 0;
+    border-top: 1px solid #5B5B5B;
+}
+
+/* Footer Widget */
+.footer-about img, .footer-widget > h6 {
+    margin-bottom: 30px;
+}
+.footer-widget .footer-widget-title {
+    color: #EDF1F7;
+}
+.footer-widget.footer-about p {
+    line-height: 160%;
+    color: #EDF1F7;
+    padding-right: 75px;
+}
+/*Footer social */
+.footer-social ul li a {
+    margin-right: 10px;
+}
+.footer-social ul li a .iconify {
+    color: #EDF1F7;
+    font-size: 30px;
+}
+
+.footer-links li a, .footer-links ul li {
+    display: flex;
+    line-height: 160%;
+    color: #EDF1F7;
+}
+.footer-links li a:hover, .footer-bottom-nav ul li a:hover {
+    color: #EDF1F7;
+    text-decoration-line: underline;
+}
+.footer-links ul li {
+    padding: 0 0 20px;
+}
+.footer-links ul li:last-child {
+    padding-bottom: 0;
+}
+.footer-contact-info ul li img {
+    margin-right: 22px;
+}
+.copyright-wrapper {
+    padding: 27px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+.footer-bottom-nav ul li a {
+    color: #EDF1F7;
+    padding: 0 10px;
+}
+/*-------------------------------------------
+    18. Footer Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    19. Section Breadcrumb Start
+-------------------------------------------*/
+.breadcrumb-area {
+    padding: 158px 0 0px;
+    background-color: #F0FCEC;
+}
+.breadcrumb-wrap {
+    border-top: 1px solid #CAD8C6;
+    border-bottom: 1px solid #CAD8C6;
+}
+.breadcrumb {
+    margin-bottom: 0;
+    padding: 15px 0;
+}
+.breadcrumb-item.active {
+    color: #85868A;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    font-family: Feather!important;
+    content: "\e92e";
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+    top: -3px;
+    position: relative;
+    left: -3px;
+}
+/*-------------------------------------------
+    19. Section Breadcrumb End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    20. Featured Blog Post Area Start
+-------------------------------------------*/
+.featured-blog-post-area {
+    background-color: #F0FCEC;
+}
+.featured-blog-post-area .featured-blog-item .blog-img {
+    margin-left: 80px;
+    overflow: hidden;
+}
+.featured-blog-post-area .blog-item.featured-blog-item {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+}
+.featured-blog-post-area .featured-blog-item .blog-item-content {
+    margin: 0 80px 0 0px;
+}
+.featured-blog-post-area .blog-item.featured-blog-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.featured-blog-element {
+    height: 120px;
+    width: auto;
+    right: 5%;
+    bottom: 0%;
+    -webkit-animation-name: featured-blog-zai;
+    animation-name: featured-blog-zai;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+@-webkit-keyframes featured-blog-zai {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    50% {
+      -webkit-transform: translate(10px, 0);
+              transform: translate(10px, 0);
+    }
+  }
+  
+  @keyframes featured-blog-zai {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    50% {
+    -webkit-transform: translate(10px, 0);
+            transform: translate(10px, 0);
+    }
+}
+.featured-blog-post-area .floating-minus {
+    left: 12%!important;
+    top: 25%!important;
+}
+/*-------------------------------------------
+    20. Featured Blog Post Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    21. Blog Item List Area Start
+-------------------------------------------*/
+.blog-list-top-part {
+    margin-bottom: 60px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+.blog-list-top-right form {
+    display: flex;
+}
+.blog-list-search-group {
+    margin-right: 20px;
+    border: 1px solid var(--black);
+    height: 53px;
+    overflow: hidden;
+    min-width: 264px;
+}
+.blog-list-search-group .input-group-text {
+    cursor: pointer;
+    font-size: 21px;
+}
+.blog-list-top-right .form-select {
+    min-width: 199px;
+}
+/*-------------------------------------------
+    21. Blog Item List Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    22. Blog Details Area Start
+-------------------------------------------*/
+.blog-details-img {
+    text-align: center;
+    max-height: 617px;
+    overflow: hidden;
+}
+.blog-details-img img {
+    width: 100%;
+}
+.blog-details-page:before {
+    content: "";
+    position: absolute;
+    background-color: var(--light-green);
+    height: 20%;
+    width: 100%;
+    z-index: -1;
+    top: -325px;
+}
+.blog-details-post-related-info {
+    margin: 60px 0;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #D3D3D3;
+}
+.post-related-info-item-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.blog-details-post-related-info .post-related-info-item-wrap:not(:last-child):after {
+    content: "";
+    height: 49px;
+    width: 1px;
+    background-color: #D3D3D3;
+    right: 0;
+    z-index: 999;
+    top: 4px;
+    position: absolute;
+}
+
+/* Blog Details Content Part */
+.blog-details-content-part p {
+    padding-top: 15px;
+}
+.blog-details-inner-media{
+    margin: 60px 0;
+}
+.blog-details-content-point {
+    margin-top: 30px;
+}
+.blog-details-content-point li {
+    margin-top: 9px;
+}
+.blog-details-quote {
+    padding: 27px 0 27px 27px;
+    border-left: 2px solid #151515;
+    margin: 60px 0;
+}
+.blog-details-quote p {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 27px;
+    padding-top: 0;
+}
+.blog-details-special-media {
+    background-color: #FAFAFA;
+    padding: 84px 102px;
+    margin: 60px 0;
+}
+.blog-details-special-media p {
+    font-size: 22px;
+    line-height: 31px;
+    padding: 0;
+}
+/*Blog Comment Area Start*/
+.blog-comment-title {
+    margin-bottom: 50px;
+}
+.author-details .writer-name {
+    color: #18171C;
+}
+.author-details .writer-designation {
+    letter-spacing: 0.185em;
+}
+.about-author {
+    background-color: var(--light-green);
+    padding: 45px 50px;
+    margin: 50px 0;
+    display: inline-flex;
+}
+.author-img {
+    height: 125px;
+    width: 125px;
+}
+.author-img img {
+    height: 125px;
+    width: 100%;
+}
+.author-details {
+    width: calc( 100% - 125px);
+}
+.comment-date-time {
+    margin: 10px 0 15px;
+}
+.blog-comment-item .comment-author-img {
+    width: 100px;
+    height: 100px;
+    background-color: #C4C4C4;
+}
+.blog-comment-item .comment-author-img img {
+    min-height: 100px;
+    width: 100%;
+}
+.blog-comment-item .author-details {
+    width: calc( 100% - 100px);
+}
+/*--------------------*/
+.share-article {
+    margin-top: 43px;
+}
+.social-share-box .social-share-btn {
+    height: 40px;
+    width: 40px;
+    background-color: #B9B9B9;
+    display: inline-flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-right: 6px;
+}
+.social-share-box .social-share-btn:hover {
+    background-color: var(--text-green);
+    color: #fff;
+}
+/*--------------------*/
+
+/*--- 22.1 Block 3 Style--- */
+.blog-comment-item {
+    margin-bottom: 44px;
+    display: inline-flex;
+}
+.blog-comment-item.under-comment {
+    padding-left: 60px;
+}
+.blog-comment-item.under-under-comment {
+    padding-left: 120px;
+}
+/*--- 22.2 Leave a Comment Style --- */
+.blog-reply-btn {
+    letter-spacing: 0.135em;
+    margin-top: 13px;
+}
+.blog-reply-btn:hover {
+    color: var(--text-green);
+}
+.leave-comment-area {
+    padding: 58px 63px;
+}
+.leave-comment-area textarea.form-control {
+    min-height: 170px;
+}
+/*Blog Comment Area End*/
+
+/*-------------------------------------------
+    22. Blog Details Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    23. Inner Page Banner Area Start
+-------------------------------------------*/
+.page-banner-content.section-title {
+    width: 52%;
+}
+.page-banner-area .row {
+    align-items: center;
+}
+.page-banner-area .floating-dot, .login-page-area .floating-dot,
+.default-page-banner .floating-dot, .headless-page-area .floating-dot {
+    left: 11%;
+    top: 23%;
+}
+.page-banner-area .floating-dot, .login-page-area .floating-dot,
+.default-page-banner .floating-dot, .login-page-area .floating-gradient-triangle, 
+.hero-area .hero-floating-img-1, .one-click-install-area .float-img-1, .let-your-site-run .floating-img-1,
+.customer-testimonial-area .floating-img-1 {
+    -webkit-animation-name: dot-zai;
+    animation-name: dot-zai;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes dot-zai {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    50% {
+      -webkit-transform: translate(0, 10px);
+              transform: translate(0, 10px);
+    }
+  }
+  
+  @keyframes dot-zai {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    50% {
+      -webkit-transform: translate(0, 10px);
+              transform: translate(0, 10px);
+    }
+}
+
+.page-banner-area .floating-cross, .login-page-area .floating-cross,
+.default-page-banner .floating-cross, .default-page-banner .floating-minus,
+ .hosting-type-page-banner-area .floating-minus {
+    right: 11%;
+    top: 54%;
+}
+.page-banner-area .floating-cross, .login-page-area .floating-cross,
+.default-page-banner .floating-cross, .default-page-banner .floating-minus,
+ .hosting-type-page-banner-area .floating-minus, .login-page-area .dots-floating,
+ .hero-area .hero-floating-img-2, .one-click-install-area .float-img-2, .let-your-site-run .floating-img-3,
+ .customer-testimonial-area .floating-img-3 {
+    -webkit-animation-name: cross-zai;
+    animation-name: cross-zai;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes cross-zai {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    50% {
+      -webkit-transform: translate(0, 10px);
+              transform: translate(0, 10px);
+    }
+  }
+  
+  @keyframes cross-zai {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    50% {
+      -webkit-transform: translate(0, 10px);
+              transform: translate(0, 10px);
+    }
+}
+
+/*-------------------------------------------
+    23. Inner Page Banner Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    24. Terms and Service Area Start
+-------------------------------------------*/
+.terms-of-service-page {
+    padding-bottom: calc(140px - 53px);
+}
+.terms-service-box h4 {
+    margin-bottom: 14px;
+    margin-top: -10px;
+}
+.terms-service-box p {
+    margin-bottom: 50px;
+}
+/*-------------------------------------------
+    24. Terms and Service Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    25. Login Page Start
+-------------------------------------------*/
+.login-content {
+    border: 1px solid var(--black);
+    padding: 49px;
+}
+.login-content h4 {
+    margin-top: -10px;
+}
+
+/* Login Floating Effect Start */
+.login-page-area .floating-gradient-triangle {
+    right: 14%;
+    bottom: 16%;
+}
+.login-page-area .dots-floating {
+    bottom: 27%;
+    left: 3%;
+}
+/* Login Floating Effect End */
+
+/* Login Social btn / Login Or css */
+.continue-text {
+    margin: 19px 0 9px;
+}
+.continue-text::before {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background: #C8C8C8;
+}
+.continue-text p {
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    padding: 2px 15px;
+    color: var(--black);
+    background-color: #fff;
+    z-index: 9;
+    position: relative;
+}
+.login-social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 30px;
+    color: var(--white-color);
+    font-weight: 600;
+    margin-top: 10px;
+}
+.login-social-btn:hover {
+    color: var(--white-color);
+}
+.login-social-btn .iconify {
+    margin-right: 10px;
+    font-size: 19px;
+}
+.login-social-btn.facebook-login {
+    background-color: #4064AC;
+}
+.login-social-btn.facebook-login:hover {
+    background-color: #244992;
+}
+.login-social-btn.google-login {
+    background-color: #DD4B39;
+}
+.login-social-btn.google-login:hover {
+    background-color: #d33521;
+}
+.login-social-btn.twitter-login {
+    background-color: #00A7E6;
+}
+.login-social-btn.twitter-login:hover {
+    background-color: #0393c7;
+}
+/*-------------------------------------------
+    25. Login Page End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    26. Error Page Start
+-------------------------------------------*/
+.error-page-area {
+    padding-top: 240px;
+}
+.error-content {
+    padding-top: 58px;
+    margin: 0 20px;
+}
+.error-content h3 {
+    margin: 20px 0 30px;
+}
+/*-------------------------------------------
+    26. Error Page End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    27. Contact Page Start
+-------------------------------------------*/
+/* hosting type page banner start */
+.hosting-type-page-banner-area .section-sub-heading {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.hosting-type-page-banner-content {
+    width: 97%;
+    margin: 0;
+    text-align: left;
+}
+.hosting-type-page-banner-img {
+    text-align: right;
+}
+.hosting-type-banner-list li {
+    padding-bottom: 25px;
+}
+.page-banner-float-bg {
+    width: 180%;
+    top: -55px;
+    left: 44px;
+    height: 130%;
+    z-index: -1;
+}
+.page-banner-float-top {
+    z-index: 9;
+    left: 316px;
+    top: -39px;
+}
+.page-banner-float-left {
+    bottom: -28px;
+    z-index: 9;
+    left: 57px;
+}
+.page-banner-float-right {
+    right: -35px;
+    bottom: 4px;
+    z-index: 9;
+}
+.hosting-type-page-banner-area .floating-minus {
+    bottom: 109px!important;
+    left: 11%!important;
+    top: auto;
+}
+.hosting-type-page-banner-area .floating-cross {
+    top: 9%;
+}
+
+/* hosting page banner end */
+
+/* Sign up call to action start */
+.sign-up-for-call-to-action {
+    background-image: url('../img/page-banner-img/sign-up-for-hosting.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 66px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--black);
+    border-top: 0;
+}
+.sign-up-for-call-to-action h3 {
+    width: 41%;
+    margin-top: -10px;
+}
+/* Sign up call to action floating effect start */
+.sign-up-for-call-to-action .floating-minus-left {
+    left: -62px;
+    top: 50%;
+}
+.sign-up-for-call-to-action .floating-minus-right {
+    right: -50px;
+    top: 50%;
+}
+.sign-up-for-call-to-action .floating-dot-left {
+    top: 24px;
+    left: 30px;
+}
+
+.sign-up-for-call-to-action .floating-dot-right {
+    right: 139px;
+    top: 44px;
+    height: 11px;
+}
+
+.sign-up-for-call-to-action .floating-cross-right {
+    right: 30px;
+    bottom: 30px;
+    height: 7px;
+}
+
+.sign-up-for-call-to-action .floating-cross-left {
+    bottom: 37px;
+    left: 287px;
+}
+/* Sign up call to action floating effect End */
+
+
+/* Sign up call to action end */
+
+/* Contact page banner start */
+.contact-info-box {
+    background-color: var(--white-color);
+    padding: 30px;
+    border: 1px solid var(--black);
+    text-align: center;
+    width: 150px;
+    margin-right: 20px;
+    height: 130px;
+}
+.contact-info-box h6 {
+    margin-top: 5px;
+}
+/* Contact page banner end */
+
+/* Contact Page left start */
+.contact-page-left .hosting-type-page-banner-content {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
+.contact-page-left h3 {
+    line-height: 130%;
+    margin-top: 0;
+}
+.contact-page-form-part {
+    border: 1px solid var(--black);
+}
+
+.contact-page-right {
+    border-left: 1px solid var(--black);
+    padding: 40px 40px 50px;
+}
+
+.contact-page-left {
+    padding: 50px 40px 50px;
+}
+.contact-page-right textarea {
+    height: 230px!important;
+}
+/* Contact Page left end */
+
+/* Contact Floating effect */
+.contact-page-area .duel-circle-half-floating {
+    top: 60%;
+    left: 7%;
+}
+
+.contact-page-area .net-floating.img-fluid {
+    right: 13%;
+    top: 7%;
+}
+/* Contact Floating effect */
+
+/*-------------------------------------------
+    27. Contact Page End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    28. About us Page Start
+-------------------------------------------*/
+
+/* ---We Hire The Best Area Start--- */
+.we-hire-the-best-area .we-hire-wrap:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+.we-hire-the-best-area .we-hire-wrap:nth-child(2n) .we-hire-the-best-right {
+    padding-left: 0;
+    padding-right: 88px;
+}
+.we-hire-the-best-area .we-hire-wrap:nth-child(2n) .we-hire-the-best-right .we-hire-bg-float {
+    z-index: -1;
+    left: 79px;
+    top: 21%;
+}
+.we-hire-the-best-area .we-hire-wrap:nth-child(2n) .we-hire-the-best-right .we-hire-float1 {
+    top: 86%;
+    left: 10%;
+}
+.we-hire-the-best-left .section-title {
+    text-align: left;
+}
+.we-hire-the-best-right {
+    padding-left: 88px;
+}
+.we-hire-box-img img:last-child {
+    float: right;
+    margin-top: 30px;
+}
+.we-hire-the-best-right .we-hire-bg-float {
+    z-index: -1;
+    left: 162px;
+    top: 27%;
+}
+.we-hire-the-best-right .we-hire-float1 {
+    top: 82%;
+    left: 22%;
+}
+
+    /* We Hire floating effect */
+    .we-hire-the-best-area .dots-floating.img-fluid {
+        top: 40%;
+        left: 7%;
+    }
+    
+    .we-hire-the-best-area .duel-circle-full-floating.img-fluid {
+        top: 12%;
+        right: 14%;
+    }
+    
+    .we-hire-the-best-area .wave-floating.img-fluid {
+        right: 0;
+        top: 54%;
+    }
+    /* We Hire floating effect */
+/* ---We Hire The Best Area End--- */
+
+/* ---About feature Area Start--- */
+.about-feature-area {
+    padding-bottom: 75px;
+}
+.about-feature-area .section-title {
+    width: 87%;
+}
+.about-feature-item {
+    padding: 60px;
+}
+.about-feature-item h6 {
+    margin-top: 18px;
+}
+/* ---About feature Area End--- */
+
+/* ---About Team Area Start--- */
+.about-team-area .section-title {
+    width: 64%;
+}
+.about-team-item {
+    border: 1px solid var(--black);
+    margin-bottom: 25px;
+}
+.team-img-wrap {
+    padding: 30px 58px 0;
+}
+.team-content {
+    padding: 25px;
+}
+/* ---About Team Area End--- */
+
+/* About sign-up-for-call-to-action Start */
+.about-team-area .sign-up-for-call-to-action {
+    border-top: 1px solid var(--black);
+}
+/* About sign-up-for-call-to-action End */
+
+/*-------------------------------------------
+    28. About us Page End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    29. Affiliate Application Form Page Start
+-------------------------------------------*/
+.affiliate-application-block {
+    margin-bottom: 50px;
+}
+.affiliate-application-block-title {
+    border: 1px solid var(--black);
+    border-bottom: 0;
+}
+.affiliate-application-block-title h5 {
+    padding-right: 15px;
+}
+
+/* Affiliate application form Floating start */
+.affiliate-application-form-page-area .dots-floating-1, .job-form-page-area .dots-floating-1 {
+    top: 35%;
+}
+
+.affiliate-application-form-page-area .dots-floating-2, .job-form-page-area .dots-floating-2 {
+    top: 62%;
+    left: 8%;
+}
+
+.affiliate-application-form-page-area .dots-floating-3, .job-form-page-area .dots-floating-3 {
+    right: 10%;
+    top: 12%;
+}
+
+.affiliate-application-form-page-area .dots-floating-triangle, .job-form-page-area .dots-floating-triangle {
+    top: 41%;
+    right: 5%;
+}
+
+.affiliate-application-form-page-area .wave-floating, .job-form-page-area .wave-floating {
+    top: 80%;
+    right: 0%;
+}
+/* Affiliate application form Floating end */
+
+/*-------------------------------------------
+    29. Affiliate Application Form Page End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    30. Affiliate Page Page Start
+-------------------------------------------*/
+.affiliate-banner-item {
+    padding: 13px 30px;
+    background-color: var(--white-color);
+}
+.hosting-type-page-banner-img .affiliate-banner-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+.hosting-type-page-banner-img .affiliate-banner-item:nth-child(1) {
+    width: 63%;
+}
+.hosting-type-page-banner-img .affiliate-banner-item:nth-child(2) {
+    background-color: #EEE0FA;
+    width: 75%;
+}
+.hosting-type-page-banner-img .affiliate-banner-item:nth-child(3) {
+    background-color: #C6D4F4;
+    width: 87%;
+}
+.hosting-type-page-banner-img .affiliate-banner-item:nth-child(4) {
+    background-color: #CEF2CF;
+}
+
+/* Joining The Program start */
+.affiliate-joining-the-program-area .section-heading {
+    margin-bottom: 95px;
+}
+.joining-program-item {
+    height: 280px;
+    padding: 80px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.joining-program-item h5 {
+    margin-bottom: 13px;
+}
+.no-icon-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: -39px;
+    background-color: #EEE0FA;
+    flex: none;
+    position: absolute;
+}
+.joining-the-program-wrap div:nth-child(2) .joining-program-item .no-icon-box  {
+    background-color: #C6D4F4;
+}
+.joining-the-program-wrap div:nth-child(3) .joining-program-item .no-icon-box  {
+    background-color: #CEF2CF;
+}
+.joining-the-program-wrap div:nth-child(4) .joining-program-item .no-icon-box  {
+    background-color: #F2CECE;
+}
+/* Joining The Program end */
+
+/* Easy to sell hosting area start */
+.easy-to-sell-hosting-area {
+    background-image: url('../img/easy-to-sell-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.single-section-heading.section-heading {
+    margin-bottom: 58px;
+}
+.easy-to-sell-left {
+    padding-right: 80px;
+}
+.easy-to-sell-item h4 {
+    margin-bottom: 10px;
+}
+.easy-to-sell-item {
+    margin-bottom: 40px;
+}
+/* Easy to sell hosting area end */
+
+/* Powerful affiliate tools Area Start */
+.powerful-affiliate-tools-area .section-title {
+    width: 55%;
+}
+.powerful-affiliate-item {
+    padding: 49px 30px;
+    margin-bottom: 25px;
+}
+.powerful-affiliate-item h4 {
+    margin: 23px 0 10px;
+}
+/* Powerful affiliate tools Area End */
+
+/* Affiliate Program FAQ Start */
+.affiliate-program-faq-area .section-title {
+    text-align: left;
+}
+.affiliate-program-faq-area .section-sub-heading {
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+.affiliate-program-faq-right {
+    padding-left: 35px;
+    margin-top: -27px;
+}
+
+/* affiliate faq floating start */
+.affiliate-program-faq-area .dots-triangle-floating, .employee-parks-area .dots-triangle-floating,
+.price-comparison-area .dots-triangle-floating, .select-perfect-vps-plan-area .dots-triangle-floating {
+    top: 2%;
+}
+
+.affiliate-program-faq-area .dots-floating, .employee-parks-area .dots-floating,
+ .price-comparison-area .dots-floating, .select-perfect-vps-plan-area .dots-floating {
+    top: 65%;
+    left: 12%;
+}
+
+.affiliate-program-faq-area .duel-circle-full-floating, .employee-parks-area .duel-circle-full-floating,
+.price-comparison-area .duel-circle-full-floating, .select-perfect-vps-plan-area .duel-circle-full-floating {
+    right: 6%;
+}
+
+.affiliate-program-faq-area .wave-floating, .employee-parks-area .wave-floating,
+.price-comparison-area .wave-floating, .select-perfect-vps-plan-area .wave-floating {
+    right: 0%;
+    top: 75%;
+}
+/* affiliate faq floating end */
+
+/* Affiliate Program FAQ End */
+
+/*-------------------------------------------
+    30. Affiliate Page End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    31. Career Page Area Start
+-------------------------------------------*/
+.career-page-banner-area .section-title {
+    margin-bottom: 68px;
+}
+
+.career-job-list-area {
+    margin-top: -94px;
+}
+/* Job filter wrap start */
+.job-filter-wrap {
+    border: 1px solid #B6D6AC;
+    padding: 55px 50px 30px;
+}
+.job-filter-wrap .job-filter-search-group .input-group-text {
+    font-size: 18px;
+    border-radius: 0;
+    justify-content: center;
+    width: 55px;
+}
+/* Job filter wrap end */
+
+/* Job Item List wrap start */
+.job-item-wrap {
+    margin-top: 70px;
+}
+.job-item {
+    margin-bottom: 25px;
+}
+.job-item-top {
+    padding: 0 30px;
+}
+.job-details-btn {
+    padding: 15px 20px;
+}
+
+.job-item-top h6 {
+    margin-bottom: 25px;
+    margin-top: 21px;
+    min-height: 64px;
+}
+
+.job-item-info {
+    margin-bottom: 37px;
+}
+.job-info-box-value {
+    margin-top: 10px;
+}
+/* Job Item List wrap end */
+
+/* Job Details Modal Start */
+#jobDetailsModal .modal-body {
+    padding: 40px 50px;
+}
+#jobDetailsModal .modal-header {
+    padding: 21px 50px;
+}
+#jobDetailsModal .modal-dialog {
+    max-width: 958px;
+}
+.modal-content {
+    border-radius: 0;
+}
+.btn-close {
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+    background-image: none;
+}
+.modal-header .btn-close {
+    box-shadow: none;
+}
+.modal-footer {
+    justify-content: flex-start;
+    padding: 30px 50px;
+}
+.job-details-title {
+    margin-bottom: 24px;
+}
+.job-details-title h4 {
+    margin-top: -10px;
+}
+.modal-job-item-info {
+    margin-bottom: 0;
+    padding: 25px 15px;
+    flex-wrap: wrap;
+}
+.modal-job-item-info .job-info-box {
+    padding: 0 15px!important;
+}
+.job-details-block {
+    margin-top: 33px;
+}
+.job-details-block h5 {
+    margin-bottom: 23px;
+}
+.job-details-content .job-company-logo {
+    height: 40px;
+    width: 40px;
+}
+.job-details-block p {
+    margin-bottom: 30px;
+}
+.job-details-block ul li {
+    margin-bottom: 15px;
+}
+/* Job Details Modal End */
+
+/* Employee parks area start */
+.employee-parks-area .powerful-affiliate-item {
+    padding: 49px 25px;
+    margin-bottom: 25px;
+}
+/* Employee parks area end */
+
+/* Where work meets area start */
+.where-work-meets-item {
+    margin-bottom: 25px;
+}
+.where-work-top {
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.play-btn {
+    height: 70px;
+    width: 70px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.play-btn:hover {
+    background-color: var(--text-green);
+    color: var(--white-color);
+}
+/* Where work meets area end */
+
+/*-------------------------------------------
+    31. Career Page Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    32. Job Form Page Area End
+-------------------------------------------*/
+.cv-upload-box {
+    height: 53px;
+    display: flex;
+    align-items: center;
+    padding-left: 11px;
+}
+/*-------------------------------------------
+    32. Job Form Page Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    33. Pricing Default Page Area Start
+-------------------------------------------*/
+
+/* Flexible Pricing Plan Area start */
+.flexible-pricing-item {
+    padding: 49px 64px;
+    margin-bottom: 25px;
+}
+.flexible-price-top {
+    border-bottom: 1px solid #EBEBEB;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.flexible-price-icon {
+    margin-bottom: 20px;
+}
+.flexible-pricing-tag {
+    color: #B5B5B5;
+    margin-bottom: 4px;
+}
+.flexible-price-bottom .theme-btn {
+    margin-top: 36px;
+}
+/* Flexible Pricing Plan Area end */
+
+/*-------------------------------------------
+    33. Pricing Default Page Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    34. VPS Hosting Plan Page Area Start
+-------------------------------------------*/
+.vps-hosting-pricing-wrap table thead th {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+    line-height: 160%;
+    padding: 23px 30px;
+}
+.vps-hosting-pricing-wrap table td {
+    color: var(--black);
+    font-weight: 500;
+    line-height: 150%;
+    vertical-align: middle;
+    padding: 23px 30px;
+}
+.vps-hosting-pricing-wrap .table>thead {
+    vertical-align: bottom;
+    background-color: #E5FFDC;
+}
+.vps-hosting-pricing-wrap .table {
+    background-color: var(--white-color);
+    border-color: black;
+    border: 1px solid;
+}
+
+/* Geekbench Score Progress Bar */
+.progress-bar {
+    width: 90px;
+    height: 12px;
+    background: #EEEBEB;
+    margin: 0 0 0 10px;
+    border-radius: 44px;
+}
+.progress-bar-inner {
+    height: 12px;
+    background: var(--black);
+    width: 1px;
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    transition: width 1s ease;
+    border-radius: 44px;
+}
+/* Geekbench Score Progress Bar */
+
+/*-------------------------------------------
+    34. VPS Hosting Plan Page Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    35. Pricing Comparison Page Area Start
+-------------------------------------------*/
+.price-comparison-table-wrap .table>:not(caption)>*>* {
+    border: 1px solid var(--black);
+}
+/*-------------------------------------------
+    35. Pricing Comparison Page Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    36. Hosting all individual Page Area Start
+-------------------------------------------*/
+.inside-hosting-pricing-plan-area .section-title, .joomla-hosting-plan-area .section-title {
+    width: 65%;
+}
+
+/* Web Hosting Page Start */
+.pricing-plan-area.inside-hosting-pricing-plan-area {
+    margin-top: -140px;
+}
+.web-hosting-specification-area .section-heading {
+    margin-bottom: 58px;
+}
+.web-hosting-specification-left-part .nav {
+    padding-top: 0;
+    width: 100%;
+}
+.web-hosting-specification-left-part .nav-pills .nav-link h5 {
+    margin-bottom: 0;
+}
+.web-hosting-specification-left-part .nav-pills .nav-link {
+    padding: 30px;
+}
+.web-hosting-spec-item {
+    padding: 0 20px 30px;
+    margin-bottom: 30px;
+}
+.web-hosting-spec-item h4 {
+    margin-bottom: 5px;
+}
+.web-hosting-spec-icon {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 8px;
+}
+.web-hosting-spec-icon img {
+    height: 40px;
+    width: auto;
+}
+/* Web Hosting Page End */
+
+/* Cloud Hosting Page Start */
+.select-perfect-vps-plan-area .table {
+    border-color: #B6D6AC;
+}
+.cloud-hosting-service-area .section-title {
+    width: 65%;
+}
+/* Cloud Hosting Page End */
+
+/* VPS Hosting Page Start */
+.vps-hosting-platform-features-area .section-title {
+    width: 65%;
+}
+.customize-vps-plan-area .section-title {
+    width: 64%;
+}
+.range-sec .theme-btn span {
+    padding: 15px 30px;
+}
+.vps-customize-box-item {
+    min-height: 170px;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+    overflow-wrap: anywhere;
+}
+.vps-customize-box-item h3 {
+    font-size: 35px;
+}
+.range-section {
+    border: 1px solid black;
+    padding: 18px 35px;
+}
+.vps-customize-form-area range-slider {
+    height: 10px;
+    background: #E4E4E4;
+    border-radius: 12px;
+}
+.vps-customize-form-area range-slider:before {
+    height: 10px;
+    background: linear-gradient(var(--black),var(--black)) 0/var(--value-percent,0) 100% no-repeat transparent;
+    
+    border-radius: 12px;
+}
+.vps-customize-form-area .thumb {
+    background: #FFFFFF;
+    height: 22px;
+    width: 22px;
+    bottom: -6px;
+    border: 4px solid var(--dark-black);
+}
+.vps-customize-form-area range-slider.touch-active .thumb-wrapper .thumb {
+    transform: scale(1.05);
+}
+.vps-customize-form-area range-slider:focus .thumb {
+    box-shadow: 0 0 0 .3em rgba(93, 200, 57,.5);
+}
+.vps-customize-form-area output {
+    display: none;
+}
+/* VPS Hosting Page End */
+
+/* Windows VPS Hosting Page Start */
+.keep-you-focused-content {
+    padding-right: 65px;
+}
+.keep-you-focused-content p {
+    margin-bottom: 25px;
+}
+.manage-multiple-sites-area .keep-you-focused-content {
+    padding-right: 0;
+    padding-left: 65px;
+}
+
+    /* Windows VPS Floating effect */
+    .keep-you-focused-area-1 .floating-triangle-gradient, .operating-system-logo-slider-area .floating-triangle-gradient {
+        right: 205px;
+        bottom: 70px;
+    }
+    .keep-you-focused-area-1 .floating-star-2, .operating-system-logo-slider-area .floating-star-2,
+    .control-on-your-web-projects-area .floating-dot {
+        right: 182px;
+        top: 199px;
+    }
+    .keep-you-focused-area-1 .floating-star-1 {
+        left: 50%;
+        top: 19%;
+    }
+    .keep-you-focused-area-1 .dots-floating, .operating-system-logo-slider-area .dots-floating,
+    .control-on-your-web-projects-area .dots-floating {
+        bottom: 27%;
+        left: 4%;
+    }
+    .keep-you-focused-area-1 .floating-dot, .operating-system-logo-slider-area .floating-dot {
+        left: 8%;
+        top: 19%;
+    }
+    .manage-multiple-sites-area .floating-coil {
+        right: 4%;
+        bottom: 37%;
+    }
+    /* Windows VPS Floating effect */
+
+/* Windows VPS Hosting Page End */
+
+/* Dedicated Server Hosting Page Start */
+.dedicated-server-plan-item-wrap {
+    margin-bottom: 25px;
+}
+.dedicated-server-hosting-plan-area .section-title {
+    width: 62%;
+}
+.dedicated-server-plan-item-left {
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+.dedicated-server-plan-item-left .col-12 {
+    padding: 0;
+}
+.dedicated-server-plan-item-inner-title {
+    text-align: left;
+}
+.dedicated-server-plan-item-inner-icon {
+    width: 55px;
+    height: 49px;
+    margin: 0 auto;
+}
+.dedicated-server-plan-item-inner-icon img {
+    height: 49px;
+    width: auto;
+}
+.dedicated-server-plan-item-right {
+    text-align: center;
+    background-color: var(--light-green);
+    border-left: 1px solid var(--black);
+}
+.dedicated-server-plan-item-inner {
+    padding: 27px 0;
+    word-break: break-word;
+}
+.dedicated-server-plan-item-inner p {
+    margin: 5px 0 15px;
+}
+.dedicated-server-plan-item-inner h5 span {
+    font-size: 16px;
+    font-weight: 400;
+}
+/* Dedicated Server Hosting Page End */
+
+/* Email Hosting Page Start */
+.wordpress-hosting-logo-slider-area::before {
+    content: "";
+    background-color: var(--light-green);
+    height: 52px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.wordpress-brand-carousel .single-logo {
+    border: 1px solid #B6D6AC;
+}
+.email-hosting-advance-search-content .section-title {
+    width: 100%;
+    margin-left: 0;
+    text-align: left;
+}
+.email-hosting-advance-search-content .section-sub-heading {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.email-hosting-expert-support .floating-dot {
+    left: 5%;
+    top: 35%;
+}
+.email-hosting-advance-search-content-list {
+    margin-bottom: 25px;
+}
+.email-hosting-advance-search-content-list li {
+    display: flex;
+    align-items: center;
+    padding: 7px 0;
+}
+.email-hosting-advance-search-content-list li span {
+    background: var(--black-800);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-flex;
+    margin-right: 12px;
+}
+
+.email-hosting-support-center {
+    display: inline-flex;
+}
+.email-hosting-support-center li {
+    margin-right: 50px;
+}
+.email-hosting-support-center li .iconify {
+    margin-right: 8px;
+    font-size: 22px;
+    color: var(--black);
+}
+.email-hosting-expert-support-img img {
+    width: 100%;
+}
+.email-hosting-expert-support-img::before {
+    left: -16px;
+    top: -16px;
+    position: absolute;
+    content: "";
+    height: 193px;
+    width: 200px;
+    background-color: #DBEFD4;
+    z-index: -1;
+}
+.email-hosting-expert-support-img::after {
+    right: -16px;
+    bottom: -16px;
+    position: absolute;
+    content: "";
+    height: 193px;
+    width: 200px;
+    background-color: #DBEFD4;
+    z-index: -1;
+}
+/* Email Hosting Page End */
+
+/* WordPress Hosting Page Start */
+.high-performance-wordpress-hosting-area .section-title {
+    width: 67%;
+}
+.high-performance-wordpress-hosting-plan-wrap div:last-child .high-performance-wordpress-hosting-plan {
+    background-color: #FCECEC;
+}
+.high-performance-wordpress-hosting-plan-wrap div:last-child .high-performance-wordpress-hosting-plan .wordpress-plan-price-inner:before {
+    background-color: #F7DFDF;
+}
+.high-performance-wordpress-hosting-plan-wrap div:last-child .high-performance-wordpress-hosting-plan .wordpress-plan-price h4, .high-performance-wordpress-hosting-plan-wrap div:last-child .high-performance-wordpress-hosting-plan .wordpress-plan-price p {
+    color: #CD4C4C;
+}
+
+.high-performance-wordpress-hosting-plan {
+    background-color: #FAFCEC;
+    margin-bottom: 25px;
+}
+.wordpress-plan-top {
+    padding: 66px 55px 55px;
+}
+.wordpress-plan-price {
+    right: 0;
+    top: 0;
+}
+.wordpress-plan-price-inner {
+    padding: 10px 15px 0 0;
+}
+.wordpress-plan-price-inner:before {
+    background-color: #F0F7CB;
+    content: "";
+    width: 298px;
+    height: 214px;
+    left: -80px;
+    position: absolute;
+    transform: rotate(43deg);
+    top: -90px;
+}
+.wordpress-plan-price h4, .wordpress-plan-price p {
+    color: #808B3A;
+    position: relative;
+}
+.wordpress-plan-list-item {
+    padding: 20px 0 0;
+    font-size: 18px;
+    line-height: 150%;
+}
+.wordpress-plan-bottom {
+    padding: 30px;
+    text-align: center;
+}
+/* WordPress Hosting Page End */
+
+/* Joomla Hosting Page Start */
+.joomla-hosting-plan-area {
+    background-image: none;
+}
+/* Joomla Hosting Page End */
+
+/*-------------------------------------------
+    36. Hosting all individual Page Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    37. Domain All Page Area Start
+-------------------------------------------*/
+
+/* Domain Transfer Page Start */
+.application-hosting-optimised-area .section-title {
+    width: 70%;
+}
+.application-hosting-opti-item {
+    width: auto;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 20px;
+}
+.application-hosting-opti-item img {
+    min-width: 70px;
+    height: auto;
+}
+
+/* Before transferring your domain area */
+.transfer-domain-form .faq-search-group .input-group-text {
+    min-width: 157px;
+}
+.before-transferring-list li {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.before-transferring-list li .iconify {
+    height: 30px;
+    width: 30px;
+    background-color: #E3F2DE;
+    font-size: 17px;
+    padding: 6px;
+    color: #51993B;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.control-on-your-web-projects-area .keep-you-focused-content {
+    padding-right: 0;
+    padding-left: 23px;
+}
+.control-on-your-web-projects-area .before-transferring-list li {
+    display: flex;
+    margin-bottom: 13px;
+}
+
+.control-on-your-web-projects-area .before-transferring-list li:last-child , 
+.before-transferring-your-domain-area .before-transferring-list li:last-child {
+    margin-bottom: 0;
+}
+
+.before-transferring-your-domain-area .keep-you-focused-content {
+    padding-right: 23px;
+}
+/* Domain Transfer Page End */
+
+/* Domain Search Page Start */
+
+/* Domain name check banner area start */
+.domain-name-check-banner-area .floating-cross {
+    top: 31%;
+}
+.domain-name-check-banner-area .floating-dot {
+    top: 33%;
+}
+.domain-name-check-banner-area .page-banner-content.section-title {
+    width: 67%;
+}
+.domain-name-checker-form {
+    width: 72%;
+    margin: auto;
+}
+.domain-name-checker-name-list-wrap {
+    margin-top: 43px;
+    margin-bottom: 38px;
+}
+.domain-name-checker-name-list-wrap .domain-name-item {
+    background-color: #fff;
+}
+.domain-name-checker-name-list-wrap .domain-name-item img {
+    height: 24px;
+    width: auto;
+}
+/* Domain name check banner area end */
+
+.domain-search-block-title {
+    padding: 20px 30px;
+}
+
+/* domain name is taken start */
+.domain-search-block-area.domain-is-taken-area {
+    margin-bottom: 60px;
+}
+.domain-is-taken-area .domain-search-block-title {
+    background-color: #FCECEC;
+}
+.domain-is-taken-area .domain-search-block-title h5 {
+    color: #FF4747;
+}
+/* domain name is taken end */
+
+/* domain name available start */
+.row.domain-search-name-item {
+    background-color: var(--white-color);
+}
+.domain-s-n-item-left, .domain-s-n-item-right {
+    padding: 25px 30px;
+}
+.domain-s-n-item-left h6 {
+    min-width: 150px;
+}
+.domain-s-n-item-right {
+    justify-content: flex-end;
+}
+.save-percent-btn, .domain-s-n-item-right .theme-btn {
+    margin-left: 20px;
+}
+.save-percent-btn {
+    background-color: #E5F5E0;
+    border-radius: 40px;
+    color: #2F8811;
+    padding: 6px 21px;
+}
+.domain-search-add-to-cart-area .floating-dots-triangle, .domain-search-add-to-cart-area .floating-dots1,
+.domain-search-add-to-cart-area .floating-dots2 {
+    -webkit-animation-name: dot-zai;
+    animation-name: dot-zai;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+.domain-search-add-to-cart-area .floating-dots-triangle {
+    right: 5%;
+    top: 34%;
+}
+.domain-search-add-to-cart-area .floating-dots1 {
+    left: 10%;
+    top: 14%;
+}
+.domain-search-add-to-cart-area .floating-dots2 {
+    bottom: 21%;
+    left: 6%;
+}
+/* domain name available end */
+
+/* Domain Search Page End */
+
+/* Domain Checker Page Start */
+.top-level-domains-price-list-area .section-title {
+    width: 60%;
+}
+.top-level-domains-price-list-area .table>:not(caption)>*>* {
+    border: 1px solid #B6D6AC;
+    vertical-align: middle;
+}
+.top-level-domains-price-list-area thead tr th, .top-level-domains-price-list-area tbody tr th {
+    font-size: 18px;
+    font-weight: 500;
+}
+.top-level-domains-price-list-area thead tr th {
+    padding: 20px 41px;
+    background-color: #E5FFDC;
+}
+.top-level-domains-price-list-area tbody tr th, .top-level-domains-price-list-area tbody tr td {
+    padding: 16px 41px;
+    background-color: #fff;
+}
+.top-level-domains-price-list-area .dots-triangle-floating {
+    right: 4%;
+    bottom: 13%;
+    height: 113px;
+}
+.top-level-domains-price-list-area .duel-circle-full-floating {
+    right: 6%;
+    top: 11%;
+}
+.top-level-domains-price-list-area .dots-floating {
+    left: 4%;
+    top: 22%;
+}
+
+/* popular domain extensions area start */
+.choose-from-the-most-popular-domain-ext-area .section-title {
+    width: 58%;
+}
+.popular-domain-extension-item {
+    padding: 30px;
+    margin-bottom: 25px;
+}
+.popular-domain-text {
+    margin-bottom: 30px;
+}
+.popular-domain-extension-item img {
+    margin-bottom: 16px;
+}
+.popular-domain-price {
+    margin-bottom: 22px;
+}
+.popular-domain-price p {
+    margin-right: 15px;
+}
+.popular-domain-tag {
+    color: #497D37;
+    padding: 8px 20px;
+    background-color: #EAF9E5;
+    right: 30px;
+}
+/* popular domain extensions area end */
+
+/* Domain Checker Page End */
+
+/*-------------------------------------------
+    37. Domain All Page Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    38. Thank you Page Area Start
+-------------------------------------------*/
+.headless-page-area {
+    height: 100%;
+    min-height: 100vh;
+}
+.headless-content-wrap {
+    height: 100vh;
+    align-items: center;
+}
+.headless-content {
+    margin: 50px 0;
+}
+.thankyou-wrap {
+    height: 376px;
+}
+.zoom-in-out-box {
+    animation: zoom-in-zoom-out 1s ease;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(0, 0);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+.thankyou-wrap > img {
+    top: 0;
+    left: 11%;
+    text-align: center;
+}
+
+.thankyou-inner {
+    height: 100%;
+}
+.thankyou-inner img {
+    top: 0;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 50%);
+}
+.thankyou-box {
+    background-image: url('../img/floating-elements/thank-you-main-frame.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+.thankyou-box-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 266px;
+}
+.thankyou-box-inner h1 {
+    transform: rotate(-2deg);
+}
+.headless-subscribe-form .faq-search-group .input-group-text {
+    min-width: 136px;
+    color: var(--white-color);
+}
+.headless-page-area .dots-floating {
+    bottom: 10%;
+    left: 6%;
+}
+.headless-page-area .floating-love {
+    top: 2%;
+    right: 25%;
+}
+.headless-page-area .floating-coil-black {
+    bottom: 8%;
+    right: 21%;
+}
+.headless-page-area .floating-cross {
+    left: 23%;
+    top: 59%;
+}
+.headless-page-area .floating-star-1 {
+    right: 11%;
+    bottom: 52%;
+}
+.headless-page-area .floating-star-2 {
+    right: 3%;
+    bottom: 7%;
+    height: 3%;
+}
+/*-------------------------------------------
+    38. Thank you Page Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    39. coming Soon Page Area Start
+-------------------------------------------*/
+.coming-soon {
+    padding: 50px 0;
+}
+.coming-soon-title {
+    margin-bottom: 10px;
+}
+.countdown {
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+.countdown-item {
+    padding: 26px;
+    min-height: 159px;
+    margin: 0 auto 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*-------------------------------------------
+    39. coming Soon Page Area End
+-------------------------------------------*/
